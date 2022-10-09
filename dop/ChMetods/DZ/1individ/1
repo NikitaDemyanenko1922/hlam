@@ -1,230 +1,130 @@
 #include <iostream>
-#include <set>
-#include <math.h>
-#include <stdlib.h>
-#include <locale.h>
-#include <conio.h>
+#define NMAX 100
 #include <fstream>
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "rus");
-    int i, j, n, m;
-    /*
-    //Создаем массив
-    cout << "Размерность Системы:" << endl;
-    cin >> n;
-    m = n + 1;
-    long double** matrix = new long double* [n];
-    for (i = 0; i < n; i++)
-        matrix[i] = new long double[m];
-    //Ввод Матрицы
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < m; j++)
-        {
-            if (j == n)
-            {
-                cout << "Элемент B-столбца " << i + 1 << " строки:" << endl;
-            }
-            cout << "Элемент: " << "[" << i + 1 << ";" << j + 1 << "]: " << endl;
-            cin >> matrix[i][j];
-            cout << endl;
-        }
-    }*/
-    ifstream fin("1.txt"); //открываем файл
-    int** matrix; //матрица
+	setlocale(LC_ALL, "rus");
+	float s, a[NMAX][NMAX], f[NMAX], c[NMAX], y[NMAX], h[NMAX], r[NMAX], F[NMAX], A[NMAX][NMAX], helperB, helperA, maxValue;
+	int m, n, i, j, k, l, maxIndex, g, d;
+	//ручной ввод матрицы 
+	/*cout << "количество неизвестных:  ";
+	cin >> n;
+	m = n + 1;
+	for (i = 1; i <= n; i++)
+	{
+
+		for (j = 1; j <= m; j++)
+		{
+			if (j != m)
+			{
+				cout << "a[" << i << "][" << j << "] = ";
+				cin >> a[i][j];
+			}
+			else
+			{
+				cout << "b[" << i << "][" << j << "] = ";
+				cin >> a[i][j];
+			}
+		}
+	}*/
+	ifstream fin("1.txt"); //открываем файл
     fin >> n; //читаем размер
     m = n + 1;
-    matrix = new int* [n]; //инициализация
-    for (int i = 0; i < n; i++) //массива
+    for (int i = 1; i <= n; i++) //массива
     {
-        matrix[i] = new int[m];
-        for (int j = 0; j < m; j++) //чтение элементов
-            fin >> matrix[i][j];
+        for (int j = 1; j <= m; j++) //чтение элементов
+            fin >> a[i][j];
     }
     fin.close(); //закрываем файл
     //Вывод Матрицы
     cout << "Введённая матрица: " << endl;
-    for (i = 0; i < n; i++)
+    for (i = 1; i <= n; i++)
     {
-        for (j = 0; j < m; j++)
+        for (j = 1; j <= m; j++)
         {
-            if (j == n)
+            if (j == m)
             {
                 cout << "|";
             }
-            cout << matrix[i][j] << " ";
+            cout << a[i][j] << " ";
         }
         cout << endl;
     }
     cout << endl;
-    int k;
-    int nl;//Переменная номер строки с ведущим элементом
-    long double o = 0;//Переменная для поиска самого большого по модулю элемента в матрице
-    long double p = 0;//Переменная для поиска самого большого по модулю элемента в матрице
-    long double tmp = 0;//Временная переменная для прямого хода метода Гаусса
-    for (k = 0; k < n; k++)
-    {
-        //Поиск ведущего элемента
-        for (i = k; i < n; i++)
-        {
-            o = fabs(matrix[i][k]);//модуль
-            if (fabs(o) > fabs(p))
-            {
-                p = fabs(o);//Нашли значение самого большого элемента
-                nl = i;//Нашли номер строки с самым большим по модулю элементом (ведущим элементом)
-            }
-        }
-        //Перестановка строк
-        if (nl != k)
-        {
-            for (i = k; i < n + 1; i++)
-            {
-                long double tmp_line = 0;//Временная переменная для перестановки строк местами
-                tmp_line = matrix[nl][i];
-                matrix[nl][i] = matrix[k][i];
-                matrix[k][i] = tmp_line;
-            }
-        }
-        //Прямой ход, приведение к верхнетреугольному виду
-        tmp = matrix[k][k];//Первый элемент в текущей матрице
-        if (tmp != 0)
-        {
-            for (j = k; j < n + 1; j++)//Нормализация
-            {
-                matrix[k][j] = matrix[k][j] / tmp;
-            }
-            for (i = k + 1; i < n; i++)
-            {
-                tmp = matrix[i][k];//Главный элемент
-                for (j = k; j < n + 1; j++)//Из следующей строки вычитаем первую, умноженную на главный элемент
-                {
-                    matrix[i][j] = matrix[i][j] - tmp * matrix[k][j];
-                }
-            }
-        }
-        //Выводим Матрицу
-        /*cout << "Матрица преобразование: " << endl;
-        for (i = 0; i < n; i++)
-        {
-            for (j = 0; j < m; j++)
-            {
-                if (j == n)
-                {
-                    cout << "|";
-                }
-                cout << matrix[i][j] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;*/
-    }
-    //Выводим Матрицу после приведения её к верхнетреугольному виду
-    cout << "Матрица привёденная к верхнетреугольному виду: " << endl;
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < m; j++)
-        {
-            if (j == n)
-            {
-                cout << "|";
-            }
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-    //Обратный ход
-    for (k = n - 1; k >= 0; k--)
-    {
-        for (i = 0; i < k; i++)
-        {
-            tmp = matrix[i][k];//Множитель
-            for (j = k; j < n + 1; j++)//Из следующей строки вычитаем первую, умноженную на главный элемент
-            {
-                matrix[i][j] = matrix[i][j] - tmp * matrix[k][j];
-            }
-        }
-        //Выводим матрицу
-        /*cout << "Матрица преобразования 2: " << endl;
-        for (i = 0; i < n; i++)
-        {
-            for (j = 0; j < m; j++)
-            {
-                if (j == n)
-                {
-                    cout << "|";
-                }
-                cout << matrix[i][j] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;*/
-    }
-    cout << "Матрица после обратного хода : " << endl;
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < m; j++)
-        {
-            if (j == n)
-            {
-                cout << "|";
-            }
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-    bool nenulinline = false;//Переменная, которая обозначает, что в строке есть ненулевой элемент
-    bool netresh = false;//Переменная, которая обозначает, что система не имеет решений
-    bool beskresh = false;//Переменная, которая обозначает, что система имеет бесконечное множество решений
-    for (k = 0; k < n; k++)
-    {
-        if (matrix[k][k] == 0)//Если на диагонали 0, значит проверяем строку
-        {
-            nenulinline = false;//Обнуляем переменную
-            for (j = k + 1; j < n; j++)
-            {
-                if (matrix[k][j] != 0)//Если в строке есть ненулевой элемент значит обозначим это через флаг
-                {
-                    nenulinline = true;
-                }
-            }
-            if (!nenulinline)//Если в строке все нули, то проверям свободный член
-            {
-                if (matrix[k][n] != 0)//Если не равно нулю, то решений нет
-                {
-                    netresh = true;
-                }
-                else//А иначе данное уравнение решается всегда
-                {
-                    beskresh = true;
-                }
-            }
-        }
-    }
-    //Выводим решения
-    if (netresh == true)
-    {
-        cout << "Нулевое решение" << endl;
-    }
-    else
-    {
-        if (beskresh == true)
-        {
-            cout << "Бесконечное решение" << endl;
-        }
-        else
-        {
-            for (i = 0; i < n; i++)
-            {
-                cout << "x" << i + 1 << "=" << matrix[i][n] << endl;
-            }
-        }
-    }
-    //Удаляем матрицу
-    delete[] matrix;
-    return 0;
+
+	// создание дубликата исходной матрицы
+	for (i = 1; i <= n; i++)
+	{
+		for (j = 1; j <= m; j++)
+		{
+			A[i][j] = a[i][j];
+		}
+	}
+
+
+
+	// прямой ход метода Гаусса
+	for (i = 1; i <= n; i++)
+	{
+		// выбор ведущего элемента столбца
+
+		maxValue = a[i][i];
+		maxIndex = i;
+		for (k = i + 1; k <= n; k++)
+		{
+			if (fabs(maxValue) < fabs(a[k][i]))
+			{
+				maxValue = a[k][i];
+				maxIndex = k;
+			}
+			if (maxValue == 0)
+			{
+				exit(0);
+			}
+			// перестановка столбцов
+			if (i != maxIndex)
+			{
+				helperB = a[i][m];
+				a[i][m] = a[k][m];
+				a[k][m] = helperB;
+				for (j = 1; j <= n; j++)
+				{
+					helperA = a[i][j];
+					a[i][j] = a[k][j];
+					a[k][j] = helperA;
+				}
+			}
+		}
+
+		// приведение к треугольному виду
+		for (j = i + 1; j <= n; j++)
+		{
+
+			c[j] = -(a[j][i] / a[i][i]);
+			a[j][m] = a[j][m] + c[j] * a[i][m];
+			for (k = 1; k <= n; k++)
+			{
+				a[j][k] = a[j][k] + c[j] * a[i][k];
+			}
+		}
+	}
+	// обратный ход метода Гаусса
+	y[n] = a[n][m] / a[n][n];
+	for (i = n; i >= 1; i--)
+	{
+		s = 0;
+		for (j = n; j > i; j--)
+		{
+			s = s + a[i][j] * y[j];
+		}
+		y[i] = (a[i][m] - s) / a[i][i];
+	}
+
+	// вывод решений
+	for (i = 1; i <= n; i++)
+	{
+		cout << "y[" << i << "]=" << y[i] << "\n";
+	}
 }
