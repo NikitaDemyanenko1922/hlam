@@ -1,13 +1,14 @@
 #include <iostream>
-#define NMAX 100
 #include <fstream>
+#include <cmath>
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	float s, a[NMAX][NMAX], f[NMAX], c[NMAX], y[NMAX], h[NMAX], r[NMAX], F[NMAX], A[NMAX][NMAX], helperB, helperA, maxValue;
-	int m, n, i, j, k, l, maxIndex, g, d;
+	double **a, *y, s, c, helpA, maxValue;
+	bool f = false;
+	int m, n, i, j, k, maxIndex;
 	//ручной ввод матрицы 
 	/*cout << "количество неизвестных:  ";
 	cin >> n;
@@ -30,51 +31,42 @@ int main()
 		}
 	}*/
 	ifstream fin("1.txt"); //открываем файл
-    fin >> n; //читаем размер
-    m = n + 1;
-    for (int i = 1; i <= n; i++) //массива
-    {
-        for (int j = 1; j <= m; j++) //чтение элементов
-            fin >> a[i][j];
-    }
-    fin.close(); //закрываем файл
-    //Вывод Матрицы
-    cout << "Введённая матрица: " << endl;
-    for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= m; j++)
-        {
-            if (j == m)
-            {
-                cout << "|";
-            }
-            cout << a[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-
-	// создание дубликата исходной матрицы
+	fin >> n; //читаем размер
+	m = n + 1;
+	a = new double *[n];
+	y = new double [n];
+	for (int i = 1; i <= n; i++) //массива
+	{
+		a[i] = new double [m];
+		for (int j = 1; j <= m; j++) //чтение элементов
+			fin >> a[i][j];
+	}
+	fin.close(); //закрываем файл
+	//Вывод Матрицы
+	cout << "Введённая матрица: " << endl;
 	for (i = 1; i <= n; i++)
 	{
 		for (j = 1; j <= m; j++)
 		{
-			A[i][j] = a[i][j];
+			if (j == m)
+			{
+				cout << "|";
+			}
+			cout << a[i][j] << " ";
 		}
+		cout << endl;
 	}
-
-
+	cout << endl;
 
 	// прямой ход метода Гаусса
 	for (i = 1; i <= n; i++)
 	{
 		// выбор ведущего элемента столбца
-
 		maxValue = a[i][i];
 		maxIndex = i;
 		for (k = i + 1; k <= n; k++)
 		{
-			if (fabs(maxValue) < fabs(a[k][i]))
+			if (abs(maxValue) < abs(a[k][i]))
 			{
 				maxValue = a[k][i];
 				maxIndex = k;
@@ -86,45 +78,60 @@ int main()
 			// перестановка столбцов
 			if (i != maxIndex)
 			{
-				helperB = a[i][m];
-				a[i][m] = a[k][m];
-				a[k][m] = helperB;
-				for (j = 1; j <= n; j++)
+				for (j = 1; j <= m; j++)
 				{
-					helperA = a[i][j];
+					helpA = a[i][j];
 					a[i][j] = a[k][j];
-					a[k][j] = helperA;
+					a[k][j] = helpA;
 				}
 			}
 		}
-
 		// приведение к треугольному виду
 		for (j = i + 1; j <= n; j++)
 		{
-
-			c[j] = -(a[j][i] / a[i][i]);
-			a[j][m] = a[j][m] + c[j] * a[i][m];
-			for (k = 1; k <= n; k++)
+			if (abs(a[i][i]) > pow(10, -9))
 			{
-				a[j][k] = a[j][k] + c[j] * a[i][k];
+				c = -(a[j][i] / a[i][i]);
+				a[j][m] = a[j][m] + c * a[i][m];
+				for (k = 1; k <= n; k++)
+				{
+					a[j][k] = a[j][k] + c * a[i][k];
+				}
+			}
+			else
+			{
+				cout << "Деление на маленькое число" << endl;
+				f = true;
+				break;
 			}
 		}
 	}
 	// обратный ход метода Гаусса
-	y[n] = a[n][m] / a[n][n];
-	for (i = n; i >= 1; i--)
+	if (abs(a[n][n]) > pow(10, -9))
 	{
-		s = 0;
-		for (j = n; j > i; j--)
+		y[n] = a[n][m] / a[n][n];
+		for (i = n; i >= 1; i--)
 		{
-			s = s + a[i][j] * y[j];
+			s = 0;
+			for (j = n; j > i; j--)
+			{
+				s = s + a[i][j] * y[j];
+			}
+			y[i] = (a[i][m] - s) / a[i][i];
 		}
-		y[i] = (a[i][m] - s) / a[i][i];
+	}
+	else
+	{
+		cout << "Деление на маленькое число" << endl;
+		f = true;
 	}
 
 	// вывод решений
-	for (i = 1; i <= n; i++)
+	if (f != true)
 	{
-		cout << "y[" << i << "]=" << y[i] << "\n";
+		for (i = 1; i <= n; i++)
+		{
+			cout << "y[" << i << "]=" << y[i] << "\n";
+		}
 	}
 }
