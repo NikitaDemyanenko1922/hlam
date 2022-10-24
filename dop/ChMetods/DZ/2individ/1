@@ -1,1 +1,56 @@
 
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+struct Data { double x, y; };
+
+double Lagrange(Data f[], int n, double xi) {
+    double result = 0;
+    for (int i = 0; i < n; i++) {
+        double term = f[i].y;
+        for (int j = 0; j < n; j++) {
+            if (j != i) term *= (xi - f[j].x) / (f[i].x - f[j].x);
+        }
+        result += term;
+    }
+    return result;
+}
+
+int main() {
+    /*//Количество исходных точек:
+    const int n = 4;
+    //Исходные значения (x,y):
+    Data f[n] = {
+     { 0, 2 },
+     { 1, 3 },
+     { 2, 12 },
+     { 5, 147 }
+    };*/
+    int n, i;
+    ifstream fin("input.txt");
+    fin >> n; //читаем кол-во точек
+    Data f[100];
+    for (i = 1; i <= n; i++)
+    {
+        fin >> f[i].x;
+        fin >> f[i].y;
+    }
+    fin.close(); //закрываем файл
+    //Вывод таблицы значений от x1 до x2 с шагом dx:
+    double x1 = 0, x2 = 50,  dx = 1;
+
+    cout.width(20); cout << "X"; cout.width(20); cout << "Y" << endl;
+    for (double x = x1; x <= x2; x += dx) {
+        double y = Lagrange(f, n, x);
+        cout.width(20); cout.precision(14); cout << x;
+        cout.width(20); cout.precision(14); cout << y << endl;
+    }
+    ofstream fout("output.txt");
+    for (double x = x1; x <= x2; x += dx)
+    {
+        double y = Lagrange(f, n, x);
+        fout << x << " " << y << endl;
+    }
+    cin.get();
+}
