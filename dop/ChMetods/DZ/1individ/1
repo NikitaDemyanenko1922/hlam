@@ -5,43 +5,22 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "rus");
-	double **a, *y, s, c, helpA, maxValue;
+	setlocale(LC_ALL, "russian");
+	double** a, * y, s, c, helpA, maxValue;
 	bool f = false;
 	int m, n, i, j, k, maxIndex;
-	//ручной ввод матрицы 
-	/*cout << "количество неизвестных:  ";
-	cin >> n;
+	ifstream fin("3.txt");
+	fin >> n;
 	m = n + 1;
-	for (i = 1; i <= n; i++)
+	a = new double* [n];
+	y = new double[n];
+	for (int i = 1; i <= n; i++) 
 	{
-
-		for (j = 1; j <= m; j++)
-		{
-			if (j != m)
-			{
-				cout << "a[" << i << "][" << j << "] = ";
-				cin >> a[i][j];
-			}
-			else
-			{
-				cout << "b[" << i << "][" << j << "] = ";
-				cin >> a[i][j];
-			}
-		}
-	}*/
-	ifstream fin("1.txt"); //открываем файл
-	fin >> n; //читаем размер
-	m = n + 1;
-	a = new double *[n];
-	y = new double [n];
-	for (int i = 1; i <= n; i++) //массива
-	{
-		a[i] = new double [m];
-		for (int j = 1; j <= m; j++) //чтение элементов
+		a[i] = new double[m];
+		for (int j = 1; j <= m; j++)
 			fin >> a[i][j];
 	}
-	fin.close(); //закрываем файл
+	fin.close();
 	//Вывод Матрицы
 	cout << "Введённая матрица: " << endl;
 	for (i = 1; i <= n; i++)
@@ -52,7 +31,7 @@ int main()
 			{
 				cout << "|";
 			}
-			cout << a[i][j] << " ";
+			cout.width(5); cout << a[i][j] << " ";
 		}
 		cout << endl;
 	}
@@ -131,7 +110,13 @@ int main()
 	{
 		for (i = 1; i <= n; i++)
 		{
-			cout << "y[" << i << "]=" << y[i] << "\n";
+			if (y[i] == 0)
+				y[i] = abs(y[i]);
+			cout << "y[" << i << "]=" << y[i] << endl;
 		}
 	}
+	ofstream fout("out1.txt");
+	for (i = 1; i <= n; i++)
+		fout << y[i];
+	fout.close();
 }
