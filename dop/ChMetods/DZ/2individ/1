@@ -52,5 +52,6 @@ int main() {
         double y = Lagrange(f, n, x);
         fout << x << " " << y << endl;
     }
+fout.close();
     cin.get();
 }
