@@ -1,50 +1,67 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
-//метод Дихотомии (1)
 
-double F(double x) {
-    return x;
-}
-//Функция поиска корня:
-double FindRoot(double (*f)(double), double a, double b, double eps) {
-    double c;
-    while ((b - a) / 2 > eps) {
-        c = (a + b) / 2;
-        if ((f(a) * f(c)) > 0) 
-            a = c;
-        else 
-            b = c;
-    }
-    return c;
-}
-int main() {
-    //Интервал, погрешность и корень:
-    double a, b, eps, x;
-    cout << "interval: ";
-    cin >> a;
-    cin >> b;
-    //Проверка корректности интервала:
-    if (F(a) * F(b) > 0) {
-        cout << "Wrong interval!\n";
-        return 0;
-    }
-    cout << "error: ";
-    cin >> eps;
-    //Поиск решения:
-    x = FindRoot(F, a, b, eps);
-    cout << "x = " << x << endl;
-    return 0;
-}
-/*int main()
+double* A = new double;
+int i, k;
+
+double f(double x)
 {
-    ifstream fin("input1.txt");
-    //Начало отрезка a
-    //конец отрезка b
-    //Функция f
-    // Малое число Е>0
-    //Погрешность d>0
-    fin.close();
-    //Вычислить с = (a+b)/2
-    //Если b-a<2E
-}*/
+    return 4 - exp(x) - 2 * x * x; //-2 ; 2
+    //return x * x - 2*x -16; // -4 : 6
+    //return Math.pow(x-5,5)*Math.pow(x+3,3); //-3,5 : 5,5
+}
+
+double dihotomia(double a, double b, double e, double c) {
+    while (b - a > e) {
+        c = (a + b) / 2;
+        cout << c << endl;
+        if (abs(b - a) < 2 * e)
+        {
+            //cout << "111g" << endl;
+            return c;
+        }
+        else
+        {
+            if (f(c) == 0)
+            {
+                //cout << "222g" << endl;
+                return c;
+            }
+            else
+            {
+                if (f(b) * f(c) < 0)
+                    a = c;
+                else
+                    b = c;
+            }
+        }
+    }
+    return (a + b) / 2;
+}
+
+int main()
+{
+    setlocale(LC_ALL, "RUSSIAN");
+    double a, b, e;
+    a = -2;
+    b = 2;
+    e = 0.00001;
+    //cout << "Начало интервала: ";
+    //cin >> a;
+    //cout << "Конец интервала: ";
+    //cin >> b;
+    //cout << "Допустимая Абсолютная Погрешность Корня: ";
+    //cin >> e;
+    if (a < 0 && b > 0) {
+        A[k] = dihotomia(a, 0, e, 0);
+        A[k+1] = dihotomia(0, b, e, 0);
+        k = 2;
+    }
+    else
+    {
+        A[k] = dihotomia(a, b, e, 0);
+        k++;
+    }
+    for (i = 0; i < k; i++)
+        cout << i+1 << "-корень: " << A[i] << endl;
+}
