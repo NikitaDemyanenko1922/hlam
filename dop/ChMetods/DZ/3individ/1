@@ -1,30 +1,36 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 double* A = new double;
-int i, k;
+int i, k, it;
 
 double f(double x)
 {
-    return 4 - exp(x) - 2 * x * x; //-2 ; 2
+    //простые
+    //return x * x - 1;
+    //return x * x - 4; // -3 : 3
+    //return pow(x, 3) + 1; // -2 : 0
+    //return 2*x + 3.5;
+    //return x-log2(5);
+    //сложные
+    //return 4 - exp(x) - 2 * x * x; //-2 ; 2
     //return x * x - 2*x -16; // -4 : 6
-    //return Math.pow(x-5,5)*Math.pow(x+3,3); //-3,5 : 5,5
 }
 
 double dihotomia(double a, double b, double e, double c) {
-    while (b - a > e) {
+    it = 0;
+    while (abs(b - a) > e) {
+        it++;
         c = (a + b) / 2;
-        cout << c << endl;
         if (abs(b - a) < 2 * e)
         {
-            //cout << "111g" << endl;
             return c;
         }
         else
         {
             if (f(c) == 0)
             {
-                //cout << "222g" << endl;
                 return c;
             }
             else
@@ -42,26 +48,39 @@ double dihotomia(double a, double b, double e, double c) {
 int main()
 {
     setlocale(LC_ALL, "RUSSIAN");
-    double a, b, e;
-    a = -2;
-    b = 2;
-    e = 0.00001;
+    double a, b, e, a1, b1, b2, d;
+    int* iterator = new int;
+    a = -10;//начало
+    b = 10;//конец
+    e = 1e-9;//ДАПК
     //cout << "Начало интервала: ";
     //cin >> a;
     //cout << "Конец интервала: ";
     //cin >> b;
     //cout << "Допустимая Абсолютная Погрешность Корня: ";
     //cin >> e;
-    if (a < 0 && b > 0) {
-        A[k] = dihotomia(a, 0, e, 0);
-        A[k+1] = dihotomia(0, b, e, 0);
-        k = 2;
-    }
-    else
+    d = 1;//интервал
+    a1 = a;
+    b1 = b;
+    for (a1;a1<b;a1+=d)
     {
-        A[k] = dihotomia(a, b, e, 0);
-        k++;
+        b1 = a1 + d;
+        a1 -= e;
+        b1 += e;
+        if (f(a1) * f(b1) < 0)
+        {
+            A[k] = dihotomia(a1, b1, e, 0);
+            iterator[k] = it;
+            k++;
+        }
     }
+
     for (i = 0; i < k; i++)
-        cout << i+1 << "-корень: " << A[i] << endl;
+    {
+        cout << "Количество итераций: " << iterator[i] << endl;
+        cout << i + 1;
+        printf("-й корень: = %.10f", A[i]);
+        cout << endl;
+    }
+    cin.get();
 }
