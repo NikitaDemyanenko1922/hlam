@@ -1,12 +1,13 @@
 #include <iostream>
-#include <math.h>
-#include <cmath>
 using namespace std;
-typedef double(*pointFunc)(double);
+
 double f(double x) {
-    return (10-x);
+    //return (10-x);
+    //return 3*x * x - x;
+    //return -x;
+    //return 1 / sqrt(1 - x * x); //-1 ; 1 ne rabotaet
 }
-double simpson_integral(pointFunc f, double a, double b, int n) {
+double simpson(double a, double b, int n) {
     const double h = (b - a) / n;
     double k1 = 0, k2 = 0;
     for (int i = 1; i < n; i += 2) {
@@ -29,14 +30,12 @@ int main() {
     eps = 1e-8;
     //cout << "\nВведите требуемую точность eps = ";
     //cin >> eps;
-    s1 = simpson_integral(f, a, b, n); //первое приближение для интеграла
+    s1 = simpson(a, b, n);
     do {
-        s = s1;     //второе приближение
-        n = 2 * n;  //увеличение числа шагов в два раза,
-                    //т.е. уменьшение значения шага в два раза
-        s1 = simpson_integral(f, a, b, n);
-    } while (fabs(s1 - s) > eps);  //сравнение приближений с заданной точностью
-    //cout << "\nИнтеграл = " << abs(s1) << endl;
+        s = s1;  
+        n = 2 * n;  //увеличение числа шагов
+        s1 = simpson(a, b, n);
+    } while (abs(s1 - s) > eps);
     printf("Интеграл = %.10f", s1);
     cin.get();
 }
