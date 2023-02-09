@@ -1,0 +1,10 @@
+Z:\Neiro\form1\form1\bin\Debug\form1.exe.config
+Z:\Neiro\form1\form1\bin\Debug\form1.exe
+Z:\Neiro\form1\form1\bin\Debug\form1.pdb
+Z:\Neiro\form1\form1\obj\Debug\form1.csproj.AssemblyReference.cache
+Z:\Neiro\form1\form1\obj\Debug\form1.Form1.resources
+Z:\Neiro\form1\form1\obj\Debug\form1.Properties.Resources.resources
+Z:\Neiro\form1\form1\obj\Debug\form1.csproj.GenerateResource.cache
+Z:\Neiro\form1\form1\obj\Debug\form1.csproj.CoreCompileInputs.cache
+Z:\Neiro\form1\form1\obj\Debug\form1.exe
+Z:\Neiro\form1\form1\obj\Debug\form1.pdb
