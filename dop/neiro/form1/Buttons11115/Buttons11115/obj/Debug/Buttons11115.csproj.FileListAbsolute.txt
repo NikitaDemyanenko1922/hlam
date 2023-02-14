@@ -1,0 +1,10 @@
+C:\Users\5\source\repos\Buttons11115\Buttons11115\bin\Debug\Buttons11115.exe.config
+C:\Users\5\source\repos\Buttons11115\Buttons11115\bin\Debug\Buttons11115.exe
+C:\Users\5\source\repos\Buttons11115\Buttons11115\bin\Debug\Buttons11115.pdb
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.csproj.AssemblyReference.cache
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.Form1.resources
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.Properties.Resources.resources
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.csproj.GenerateResource.cache
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.csproj.CoreCompileInputs.cache
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.exe
+C:\Users\5\source\repos\Buttons11115\Buttons11115\obj\Debug\Buttons11115.pdb
