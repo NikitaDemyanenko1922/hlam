@@ -1,6 +1,6 @@
 #include <iostream>
-
 using namespace std;
+int it = 0;
 
 void Input(int n, int a[100][100])
 {
@@ -13,48 +13,53 @@ void Input(int n, int a[100][100])
 
 void Matr(int a[100][100], int n)
 {
-    float w0[100], w[100], sum = 0, w0norm[100], eps, d, d0;
-    w0[0] = 1;
+    float y0[100], x0[100], sum = 0, y0norm[100], eps, d, d0;
+    y0[0] = 1;
     for (int i = 1; i < n; i++)
-        w0[i] = 0;
+        y0[i] = 0;
     do
     {
         for (int i = 0; i < n; i++)
-            sum += w0[i] * w0[i];
+            sum += y0[i] * y0[i];
         d0 = sqrt(sum);
         for (int i = 0; i < n; i++)
-            w0norm[i] = w0[i] / d0;
+            y0norm[i] = y0[i] / d0;
         for (int i = 0; i < n; i++)
         {
-            w[i] = 0;
+            x0[i] = 0;
             for (int j = 0; j < n; j++)
-                w[i] += a[i][j] * w0norm[j];
+                x0[i] += a[i][j] * y0norm[j];
         }
         sum = 0;
         for (int i = 0; i < n; i++)
-            sum += w[i] * w[i];
+            sum += x0[i] * x0[i];
         d = sqrt(sum);
         eps = abs(d - d0);
         for (int i = 0; i < n; i++)
-            w0[i] = w[i];
+            y0[i] = x0[i];
         sum = 0;
-    } while (eps > 1e-5);
+        it++;
+    } while (eps > 1e-8);
     cout << endl << "Матрица: " << endl;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++)
             cout << a[i][j] << " ";
         cout << endl;
     }
-    cout << endl << "L = " << d << endl;
+    cout << "Вектор:" << endl;
+    for (int i = 0; i < n; i++)
+        cout << x0[i] << endl;
+    cout << endl << "Собственное значение = " << d << endl;
 }
 
 int main()
 {
     setlocale(LC_ALL, "rus");
     int n, a[100][100];
-    cout << "Размерность = ";
+    cout << "Размерность: ";
     cin >> n;
     Input(n,a);
     Matr(a, n);
+    cout << "Количество итераций: " << it << endl;
     cin.get();
 }
