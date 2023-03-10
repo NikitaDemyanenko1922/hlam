@@ -120,3 +120,76 @@ int main()
 		fout << y[i];
 	fout.close();
 }
+
+
+
+
+#include <iostream>
+using namespace std;
+int it = 0;
+
+void Input(int n, int a[100][100])
+{
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++) {
+            cout << "A[" << i << "][" << j << "]: ";
+            cin >> a[i][j];
+        }
+}
+
+void Matr(int a[100][100], int n)
+{
+    float y0[100], x0[100], sum = 0, y0norm[100], eps, d, d0;
+    cout << "Введите соб. вектор: " << endl;
+    for (int i = 0; i < n; i++)
+        cin >> y0[i];
+    do
+    {
+        for (int i = 0; i < n; i++)
+            sum += y0[i] * y0[i];
+        d0 = sqrt(sum);
+        for (int i = 0; i < n; i++)
+            y0norm[i] = y0[i] / d0;
+        for (int i = 0; i < n; i++)
+        {
+            x0[i] = 0;
+            for (int j = 0; j < n; j++)
+                x0[i] += a[i][j] * y0norm[j];
+        }
+        sum = 0;
+        for (int i = 0; i < n; i++)
+            sum += x0[i] * x0[i];
+        d = sqrt(sum);
+        eps = abs(d - d0);
+        for (int i = 0; i < n; i++)
+            y0[i] = x0[i];
+        sum = 0;
+        it++;
+        cout << "error" << endl;
+    } while (eps > 1e-5);
+    cout << endl << "Матрица: " << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++)
+            cout << a[i][j] << " ";
+        cout << endl;
+    }
+    cout << endl << "Собственное значение = " << d << endl;
+    cout << "Вектор:" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << round(x0[i] / d) << endl;
+
+    }
+}
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int n, a[100][100];
+    cout << "Размерность: ";
+    cin >> n;
+    Input(n, a);
+    Matr(a, n);
+    cout << "Количество итераций: " << it << endl;
+    cin.get();
+}
