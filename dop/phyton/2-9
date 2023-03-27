@@ -1,0 +1,33 @@
+N = int(input("Число дней в году: "))
+K = int(input("Число партий: "))
+if(K<1):
+    K = 1
+if(K>100):
+    K = 100
+N += 1
+day = 0
+count_of_zabastovka = 0
+a = []
+b = []
+days_of_zabastovka = []
+for i in range(1, K+1, 1):
+    print(i, "-партия")
+    ai = int(input("День первой забастовки "))
+    if(ai<1):
+        ai = 1
+    a.append(ai)
+    bi = int(input("Интервал до следующей забастовки ")) 
+    if(bi>N):
+        bi = N
+    b.append(bi)
+for i in range(0, K, 1):
+    day = a[i]
+    while day < N:
+        days_of_zabastovka.append(day) 
+        day += b[i]
+st_lst=set(days_of_zabastovka)
+print(st_lst)
+#new_lst=sorted(list(st_lst))
+for i in st_lst:        
+    count_of_zabastovka += 1
+print(count_of_zabastovka)
