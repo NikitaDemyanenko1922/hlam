@@ -31,3 +31,32 @@ print(st_lst)
 for i in st_lst:        
     count_of_zabastovka += 1
 print(count_of_zabastovka)
+
+
+
+
+
+
+
+x = input()
+number = []
+chisla = [0]*10
+for i in x:
+    if i.isnumeric():
+        number.append(i)
+if len(number) == 0:
+    print("NO")
+else:
+    number_of_sim = 0
+    for i in number:
+        for j in range(10):
+            if i == j:
+                chisla[j] += 1
+    for i in range(10):
+        print(chisla[i])
+        if(chisla[i]/2 != 0):
+            number_of_sim += 1
+        if(number_of_sim >=1):
+            print("NO")
+            break
+    print("YES")
