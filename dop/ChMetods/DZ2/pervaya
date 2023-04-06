@@ -1,0 +1,112 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+//скалярное произведение
+double Skalar(double* y, double* z, int n, double angle)
+{
+	double skalar = 0;
+	for (int i = 0; i < n; i++)
+	{
+		y[i] *= z[i];
+		skalar += y[i] * angle;
+	}
+	return skalar;
+}
+//косинус угла между векторами
+double Cos_Angle(double* y, double* z, int n)
+{
+	double sum1 = 0, sum2 = 0, multiplication = 0, fi;
+	for (int i = 0; i < n; i++)
+	{
+		sum1 += pow(y[i], 2);
+		sum2 += pow(z[i], 2);
+		multiplication += y[i] * z[i];
+	}
+	return fi = multiplication / (sqrt(sum1) * sqrt(sum2));
+}
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	//Ввести - шаг 1
+	int n;
+	ifstream fin("1.txt");
+	fin >> n;
+	//n = 3;
+	if (!n || n > 5) return 0;
+	double epsilon = 1e-5, * lambda, ** y, ** A;
+	A = new double* [n];
+	y = new double* [n];
+	lambda = new double[n];
+	lambda[0] = 0;
+	int k = 0;
+
+	int summ = 0;
+	double angle, * s = new double[n], * t = new double[n], * norm_y = new double[n], ** x = new double* [n];
+
+	//Объявление
+	for (int i = 0; i < n; i++)
+	{
+		A[i] = new double[n];
+		y[i] = new double[n];
+		x[i] = new double[n];
+		for (int j = 0; j < n; j++)
+		{
+			fin >> A[i][j];
+		}
+	}
+	for (int i = 0; i < n; i++)
+	{
+		fin >> y[0][i];
+	}
+	fin.close();
+	//Алгоритм
+	//Шаг 2
+	s[0] = Skalar(y[0], y[0], n, 0);
+	norm_y[0] = sqrt(s[0]);
+	for (int i = 0; i < n; i++)
+		x[0][i] = y[0][i]/norm_y[0];
+	do
+	{
+		k++;
+
+		//Шаг 3
+
+		for (int j = 0; j < n; j++)
+		{
+			for (int i = 0; i < n; i++)
+			{
+				summ += A[j][i] * x[k-1][j];				
+			}
+			y[k][j] = summ;
+		}
+
+		//Шаг 4
+
+		s[k] = Skalar(y[k], y[k], n, 0);
+		angle = Cos_Angle(y[k], x[k - 1], n);
+		t[k] = Skalar(y[k], x[k-1], n, angle);
+		norm_y[k] = sqrt(s[k]);
+		for (int j = 0; j < n; j++)
+		{
+			x[k][j] = y[k][j] / norm_y[k];
+		}
+		lambda[k] = s[k] / t[k];
+	} while (lambda[k] - lambda[k - 1] > epsilon); //шаг 5
+
+	//lambda1 = lambda[k];
+	//x1 = x[k];
+	cout << "Lambda1 = " << lambda[k] << endl;
+	cout << "X1 = " << endl;
+	for (int i = 0; i < n; i++)
+		cout << x[k][i] << endl;
+
+	delete[]A;
+	delete[]y;
+	delete[]x;
+	delete[]s;
+	delete[]t;
+	delete[]norm_y;
+}
