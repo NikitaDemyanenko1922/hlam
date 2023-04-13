@@ -3,27 +3,27 @@
 using namespace std;
 
 //скалярное произведение
-double Skalar(double* y, double* z, int n, double angle)
+double Skalar(double* y, double* x, int n, double angle)
 {
 	double skalar = 0;
 	for (int i = 0; i < n; i++)
 	{
-		y[i] *= z[i];
+		y[i] *= x[i];
 		skalar += y[i] * angle;
 	}
 	return skalar;
 }
 //косинус угла между векторами
-double Cos_Angle(double* y, double* z, int n)
+double Cos_Angle(double* y, double* x, int n)
 {
-	double sum1 = 0, sum2 = 0, multiplication = 0, fi;
+	double sum1 = 0, sum2 = 0, multi = 0, fi;
 	for (int i = 0; i < n; i++)
 	{
 		sum1 += pow(y[i], 2);
-		sum2 += pow(z[i], 2);
-		multiplication += y[i] * z[i];
+		sum2 += pow(x[i], 2);
+		multi += y[i] * x[i];
 	}
-	return fi = multiplication / (sqrt(sum1) * sqrt(sum2));
+	return fi = multi / (sqrt(sum1) * sqrt(sum2));
 }
 
 int main()
@@ -34,79 +34,59 @@ int main()
 	int n;
 	ifstream fin("1.txt");
 	fin >> n;
-	//n = 3;
-	if (!n || n > 5) return 0;
-	double epsilon = 1e-5, * lambda, ** y, ** A;
+	if (!n) return 0;
+	double angle, s, t, norm_y, * x = new double[n], epsilon = /*1e-5*/ 0.0000001, lambda = 0, lambda1 = 0, ** A, * y;
 	A = new double* [n];
-	y = new double* [n];
-	lambda = new double[n];
-	lambda[0] = 0;
-	int k = 0;
-
-	int summ = 0;
-	double angle, * s = new double[n], * t = new double[n], * norm_y = new double[n], ** x = new double* [n];
+	y = new double [n];
+	int  k = 0, summ = 0;
 
 	//Объявление
 	for (int i = 0; i < n; i++)
 	{
 		A[i] = new double[n];
-		y[i] = new double[n];
-		x[i] = new double[n];
 		for (int j = 0; j < n; j++)
-		{
 			fin >> A[i][j];
-		}
 	}
 	for (int i = 0; i < n; i++)
-	{
-		fin >> y[0][i];
-	}
+		fin >> y[i];
 	fin.close();
-	//Алгоритм
+
 	//Шаг 2
-	s[0] = Skalar(y[0], y[0], n, 0);
-	norm_y[0] = sqrt(s[0]);
+
+	s = Skalar(y, y, n, 1);
+	norm_y = sqrt(s);
 	for (int i = 0; i < n; i++)
-		x[0][i] = y[0][i]/norm_y[0];
+		x[i] = y[i]/norm_y;
 	do
 	{
 		k++;
+		lambda = lambda1;
 
 		//Шаг 3
 
 		for (int j = 0; j < n; j++)
 		{
 			for (int i = 0; i < n; i++)
-			{
-				summ += A[j][i] * x[k-1][j];				
-			}
-			y[k][j] = summ;
+				summ += A[j][i] * x[j];				
+			y[j] = summ;
 		}
 
 		//Шаг 4
 
-		s[k] = Skalar(y[k], y[k], n, 0);
-		angle = Cos_Angle(y[k], x[k - 1], n);
-		t[k] = Skalar(y[k], x[k-1], n, angle);
-		norm_y[k] = sqrt(s[k]);
+		s = Skalar(y, y, n, 1);
+		angle = Cos_Angle(y, x, n);
+		t = Skalar(y, x, n, angle);
+		norm_y = sqrt(s);
 		for (int j = 0; j < n; j++)
-		{
-			x[k][j] = y[k][j] / norm_y[k];
-		}
-		lambda[k] = s[k] / t[k];
-	} while (lambda[k] - lambda[k - 1] > epsilon); //шаг 5
-
-	//lambda1 = lambda[k];
-	//x1 = x[k];
-	cout << "Lambda1 = " << lambda[k] << endl;
+			x[j] = y[j] / norm_y;
+		lambda1 = s / t;
+	} while (lambda1 - lambda > epsilon); //шаг 5
+	cout << "Lambda1 = " << lambda1 << endl;
 	cout << "X1 = " << endl;
 	for (int i = 0; i < n; i++)
-		cout << x[k][i] << endl;
+		cout << x[i] << endl;
 
 	delete[]A;
 	delete[]y;
 	delete[]x;
-	delete[]s;
-	delete[]t;
-	delete[]norm_y;
 }
