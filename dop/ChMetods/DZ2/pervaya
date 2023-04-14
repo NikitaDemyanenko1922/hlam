@@ -90,3 +90,98 @@ int main()
 	delete[]y;
 	delete[]x;
 }
+
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+//скалярное произведение
+double Skalar(double* y, double* x, int n, double angle)
+{
+	double skalar = 0;
+	for (int i = 0; i < n; i++)
+	{
+		y[i] *= x[i];
+		skalar += y[i] * angle;
+	}
+	return skalar;
+}
+//косинус угла между векторами
+double Cos_Angle(double* y, double* x, int n)
+{
+	double sum1 = 0, sum2 = 0, multi = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum1 += pow(y[i], 2);
+		sum2 += pow(x[i], 2);
+		multi += y[i] * x[i];
+	}
+	return multi / (sqrt(sum1) * sqrt(sum2));
+}
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	//Ввести - шаг 1
+	int n;
+	ifstream fin("1.txt");
+	fin >> n;
+	if (!n) return 0;
+	double angle, s, t, norm_y, * x = new double[n], epsilon = 1e-1, lambda = 0, lambda1 = 0, ** A, * y;
+	A = new double* [n];
+	y = new double[n];
+	int  k = 0, summ = 0;
+
+	//Объявление
+	for (int i = 0; i < n; i++)
+	{
+		A[i] = new double[n];
+		for (int j = 0; j < n; j++)
+			fin >> A[i][j];
+	}
+	for (int i = 0; i < n; i++)
+		fin >> y[i];
+	fin.close();
+
+	//Шаг 2
+
+	s = Skalar(y, y, n, 1);
+	norm_y = sqrt(s);
+	for (int i = 0; i < n; i++)
+		x[i] = y[i] / norm_y;
+	do
+	{
+		k++;
+		lambda = lambda1;
+
+		//Шаг 3
+
+		for (int j = 0; j < n; j++)
+		{
+			for (int i = 0; i < n; i++)
+				summ += A[j][i] * x[j];
+			y[j] = summ;
+		}
+
+		//Шаг 4
+
+		s = Skalar(y, y, n, 1);
+		angle = Cos_Angle(y, x, n);
+		t = Skalar(y, x, n, angle);
+		norm_y = sqrt(s);
+		for (int j = 0; j < n; j++)
+			x[j] = y[j] / norm_y;
+		lambda1 = s / t;
+	} while (lambda1 - lambda > epsilon); //шаг 5
+	cout << "Lambda1 = " << lambda1 << endl;
+	cout << endl << "X1 = " << endl;
+	for (int i = 0; i < n; i++)
+		cout << x[i] << endl;
+	cout << "K = " << endl << k;
+
+	delete[]A;
+	delete[]y;
+	delete[]x;
+}
