@@ -39,11 +39,13 @@ print(count_of_zabastovka)
 
 
 x = input()
-number = []
-chisla = [0]*10
+number_0 = []
+a = [0] * 10
+chisla = list(map(int, a))
 for i in x:
     if i.isnumeric():
-        number.append(i)
+        number_0.append(i)
+number = list(map(int, number_0))
 if len(number) == 0:
     print("NO")
 else:
@@ -53,10 +55,15 @@ else:
             if i == j:
                 chisla[j] += 1
     for i in range(10):
-        print(chisla[i])
-        if(chisla[i]/2 != 0):
+        if(chisla[i]%2 != 0):
+            print("аыкув54546нук4")
             number_of_sim += 1
-        if(number_of_sim >=1):
-            print("NO")
-            break
-    print("YES")
+    if(number_of_sim >1):
+        print("NO")
+    else:
+        print("YES")
+        i = 0
+        while number != number[::-1]:
+            number.insert(len(number), number[i])
+            i += 1
+        print(*number[:len(number)][::-1])
