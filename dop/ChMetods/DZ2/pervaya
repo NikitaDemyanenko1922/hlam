@@ -185,3 +185,154 @@ int main()
 	delete[]y;
 	delete[]x;
 }
+
+
+
+/*#include <iostream>
+#include <fstream>
+using namespace std;
+
+//скалярное произведение
+double Skalar(double* y, double* x, int n, double angle)
+{
+	double skalar = 0;
+	for (int i = 0; i < n; i++)
+	{
+		y[i] *= x[i];
+		skalar += y[i] * angle;
+	}
+	return skalar;
+}
+//косинус угла между векторами
+double Cos_Angle(double* y, double* x, int n)
+{
+	double sum1 = 0, sum2 = 0, multi = 0, fi;
+	for (int i = 0; i < n; i++)
+	{
+		sum1 += pow(y[i], 2);
+		sum2 += pow(x[i], 2);
+		multi += y[i] * x[i];
+	}
+	return fi = multi / (sqrt(sum1) * sqrt(sum2));
+}
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	//Ввести - шаг 1
+	int n;
+	ifstream fin("1.txt");
+	fin >> n;
+	if (!n) return 0;
+	double angle, s, t, norm_y, * x = new double[n], epsilon = 1e-5, lambda = 0, lambda1 = 0, ** A, * y;
+	A = new double* [n];
+	y = new double [n];
+	int  k = 0, summ = 0;
+
+	//Объявление
+	for (int i = 0; i < n; i++)
+	{
+		A[i] = new double[n];
+		for (int j = 0; j < n; j++)
+			fin >> A[i][j];
+	}
+	for (int i = 0; i < n; i++)
+		fin >> y[i];
+	fin.close();
+
+	//Шаг 2
+
+	s = Skalar(y, y, n, 1);
+	norm_y = sqrt(s);
+	for (int i = 0; i < n; i++)
+		x[i] = y[i]/norm_y;
+	do
+	{
+		k++;
+		lambda = lambda1;
+
+		//Шаг 3
+
+		for (int j = 0; j < n; j++)
+		{
+			for (int i = 0; i < n; i++)
+				summ += A[j][i] * x[j];				
+			y[j] = summ;
+		}
+
+		//Шаг 4
+
+		s = Skalar(y, y, n, 1);
+		angle = Cos_Angle(y, x, n);
+		t = Skalar(y, x, n, angle);
+		norm_y = sqrt(s);
+		for (int j = 0; j < n; j++)
+			x[j] = y[j] / norm_y;
+		lambda1 = s / t;
+	} while (lambda1 - lambda > epsilon); //шаг 5
+	cout << "Lambda1 = " << lambda1 << endl;
+	cout << "X1 = " << endl;
+	for (int i = 0; i < n; i++)
+		cout << x[i] << endl;
+
+	delete[]A;
+	delete[]y;
+	delete[]x;
+}*/
+
+
+
+#include <iostream>
+
+using namespace std;
+
+void Input(int n, int A[][100])
+{
+	int i, j;
+	for (i = 0; i < n; i++)
+		for (j = 0; j < n; j++)
+			cin >> A[i][j];
+}
+
+void Matr(int A[][100], int n)
+{
+	float w0[100], w[100], summ = 0, w0norm[100], e, d, d0;
+	int i, j, k;
+	for (i = 0; i < n; i++)
+		w0[i] = 0;
+	w0[0] = 1;
+	do
+	{
+		for (i = 0; i < n; i++)
+			summ = summ + w0[i] * w0[i];
+		d0 = sqrt(summ);
+		for (i = 0; i < n; i++)
+			w0norm[i] = w0[i] / d0;
+		for (i = 0; i < n; i++)
+		{
+			w[i] = 0;
+			for (j = 0; j < n; j++)
+				w[i] = w[i] + A[i][j] * w0norm[j];
+		}
+		summ = 0;
+		for (i = 0; i < n; i++)
+			summ = summ + w[i] * w[i];
+		d = sqrt(summ);
+		e = abs(d - d0);
+		for (i = 0; i < n; i++)
+			w0[i] = w[i];
+		summ = 0;
+	} while (e > 0.001);
+	printf("%f\n", d);
+	for (i = 0; i < n; i++)
+		printf("%f\n", w0norm[i]);
+}
+
+void main()
+{
+	int n, A[100][100];
+	//scanf("%d", &n);
+	n = 3;
+	Input(n, A);
+	Matr(A, n);
