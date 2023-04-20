@@ -1,5 +1,5 @@
 #include<iostream>
-#include <cmath>
+
 using namespace std;
 
 double f(const double x)
@@ -18,10 +18,9 @@ double dih(double a, double b, double eps, double delta) {
         else if (f(y1) >= f(z1))
             a = y1;
         k++;
-        cout << "ОтрезокN: [" << y1 << ";" << z1 << "]" << endl;
     }
-    cout << "Отрезок: [" << y1 << ";" << z1 << "]" << endl;
-    cout << "Количество итераций - " << k << endl;
+    cout << " Отрезок: [" << y1 << ";" << z1 << "]" << endl;
+    cout << " Количество итераций - " << k << endl;
     return f((a + b) / 2);
 }
 
@@ -29,6 +28,6 @@ int main()
 {
     setlocale(LC_ALL, "rus");
     double a = -2, b = 8, eps = 0.2, delta = 0.5;
-    cout << "Интервал: [" << a << ";" << b << "]" << endl;
-    cout << "Ответ: " << dih(a, b, eps, delta) << endl;
+    cout << endl << " Интервал: [" << a << ";" << b << "]" << endl;
+    cout << " Ответ: " << dih(a, b, eps, delta) << endl;
 }
