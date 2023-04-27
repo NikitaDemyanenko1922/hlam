@@ -5,42 +5,27 @@ using namespace std;
 //скалярное произведение
 double Skalar(double* y, double* x, int n, double angle)
 {
-	double skalar = 0;
+	double multy, skalar = 0;
 	for (int i = 0; i < n; i++)
 	{
-		y[i] *= x[i];
-		skalar += y[i] * angle;
+		multy = y[i] * x[i];
+		skalar += multy;
 	}
 	return skalar;
-}
-//косинус угла между векторами
-double Cos_Angle(double* y, double* x, int n)
-{
-	double sum1 = 0, sum2 = 0, multi = 0, fi;
-	for (int i = 0; i < n; i++)
-	{
-		sum1 += pow(y[i], 2);
-		sum2 += pow(x[i], 2);
-		multi += y[i] * x[i];
-	}
-	return fi = multi / (sqrt(sum1) * sqrt(sum2));
 }
 
 int main()
 {
 	setlocale(LC_ALL, "rus");
 
-	//Ввести - шаг 1
+	//Шаг 1
 	int n;
 	ifstream fin("1.txt");
 	fin >> n;
 	if (!n) return 0;
-	double angle, s, t, norm_y, * x = new double[n], epsilon = /*1e-5*/ 0.0000001, lambda = 0, lambda1 = 0, ** A, * y;
-	A = new double* [n];
-	y = new double [n];
-	int  k = 0, summ = 0;
+	double angle, s, t, norm_y, * x = new double[n], epsilon = 1e-3, lambda = 0, lambda1 = 0, ** A = new double* [n], * y = new double[n], summ = 0;
+	int  k = 0;
 
-	//Объявление
 	for (int i = 0; i < n; i++)
 	{
 		A[i] = new double[n];
@@ -66,6 +51,7 @@ int main()
 
 		for (int j = 0; j < n; j++)
 		{
+			summ = 0;
 			for (int i = 0; i < n; i++)
 				summ += A[j][i] * x[j];				
 			y[j] = summ;
@@ -74,8 +60,7 @@ int main()
 		//Шаг 4
 
 		s = Skalar(y, y, n, 1);
-		angle = Cos_Angle(y, x, n);
-		t = Skalar(y, x, n, angle);
+		t = Skalar(y, x, n, 1);
 		norm_y = sqrt(s);
 		for (int j = 0; j < n; j++)
 			x[j] = y[j] / norm_y;
@@ -85,12 +70,8 @@ int main()
 	cout << "X1 = " << endl;
 	for (int i = 0; i < n; i++)
 		cout << x[i] << endl;
-
-	delete[]A;
-	delete[]y;
-	delete[]x;
+	cout << "K = " << k << endl;
 }
-
 
 #include <iostream>
 #include <fstream>
