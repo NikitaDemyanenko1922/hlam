@@ -1,9 +1,10 @@
 #include <iostream>
 #include <fstream>
+#include <math.h>
 using namespace std;
 
 //скалярное произведение
-double Skalar(double* y, double* x, int n, double angle)
+double Skalar(double* y, double* x, int n)
 {
 	double multy, skalar = 0;
 	for (int i = 0; i < n; i++)
@@ -20,28 +21,35 @@ int main()
 
 	//Шаг 1
 	int n;
-	ifstream fin("1.txt");
-	fin >> n;
+	//ifstream fin("1.txt");
+	//fin >> n;
+	n = 3;
 	if (!n) return 0;
-	double angle, s, t, norm_y, * x = new double[n], epsilon = 1e-3, lambda = 0, lambda1 = 0, ** A = new double* [n], * y = new double[n], summ = 0;
+	double angle, s, t, norm_y, * x = new double[n], epsilon = 1e-5, lambda = 0, lambda1 = 0, ** A = new double* [n], * y = new double[n], summ = 0;
 	int  k = 0;
 
 	for (int i = 0; i < n; i++)
 	{
 		A[i] = new double[n];
 		for (int j = 0; j < n; j++)
-			fin >> A[i][j];
+			//fin >> A[i][j];
+			cin >> A[i][j];
 	}
-	for (int i = 0; i < n; i++)
-		fin >> y[i];
-	fin.close();
+	//for (int i = 0; i < n; i++)
+		//fin >> y[i];
+		//cin >> y[i];
+		y[0] = 0;
+		y[1] = 0;
+		y[2] = 1;
+	//fin.close();
 
 	//Шаг 2
 
-	s = Skalar(y, y, n, 1);
+	s = Skalar(y, y, n);
 	norm_y = sqrt(s);
-	for (int i = 0; i < n; i++)
-		x[i] = y[i]/norm_y;
+	if(norm_y != 0)
+        for (int i = 0; i < n; i++)
+	    	x[i] = y[i]/norm_y;
 	do
 	{
 		k++;
@@ -49,22 +57,26 @@ int main()
 
 		//Шаг 3
 
-		for (int j = 0; j < n; j++)
+		for (int i = 0; i < n; i++)
 		{
 			summ = 0;
-			for (int i = 0; i < n; i++)
-				summ += A[j][i] * x[j];				
-			y[j] = summ;
+			for (int j = 0; j < n; j++)
+				summ += A[i][j] * x[j];				
+			y[i] = summ;
 		}
 
 		//Шаг 4
 
-		s = Skalar(y, y, n, 1);
-		t = Skalar(y, x, n, 1);
+		s = Skalar(y, y, n);
+		t = Skalar(y, x, n);
 		norm_y = sqrt(s);
-		for (int j = 0; j < n; j++)
-			x[j] = y[j] / norm_y;
-		lambda1 = s / t;
+		if(norm_y != 0)
+		    for (int j = 0; j < n; j++)
+			    x[j] = y[j] / norm_y;
+	    if(t != 0)
+		    lambda1 = s / t;
+		else
+		    lambda1 = s;
 	} while (lambda1 - lambda > epsilon); //шаг 5
 	cout << "Lambda1 = " << lambda1 << endl;
 	cout << "X1 = " << endl;
