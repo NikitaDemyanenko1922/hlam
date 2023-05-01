@@ -39,7 +39,11 @@ print(count_of_zabastovka)
 
 
 x = input()
-number_0 = []
+#f = open('example.txt','r');
+#x = f.readline();
+number_0 = [];
+output = [];
+flag_seredina = False;
 a = [0] * 10
 chisla = list(map(int, a))
 for i in x:
@@ -56,14 +60,19 @@ else:
                 chisla[j] += 1
     for i in range(10):
         if(chisla[i]%2 != 0):
-            print("аыкув54546нук4")
+            seredina = i;
+            flag_seredina = True;
             number_of_sim += 1
     if(number_of_sim >1):
         print("NO")
     else:
         print("YES")
-        i = 0
-        while number != number[::-1]:
-            number.insert(len(number), number[i])
-            i += 1
-        print(*number[:len(number)][::-1])
+        if(flag_seredina):
+            output.append(seredina)
+            chisla[seredina] -= 1;
+        for i in range(10):
+            while(chisla[i]>0):
+                output.insert(0, i);
+                output.append(i);
+                chisla[i] -= 2;
+        print(*output);
