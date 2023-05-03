@@ -1,0 +1,47 @@
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.csproj.AssemblyReference.cache
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.Form1.resources
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.csproj.GenerateResource.cache
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.AssemblyInfoInputs.cache
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.AssemblyInfo.cs
+C:\Users\s0153431\source\repos\project1\project1\obj\Debug\net6.0-windows\project1.csproj.CoreCompileInputs.cache
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.csproj.AssemblyReference.cache
+Z:\project1\project1\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.csproj.ResolveComReference.cache
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.Form1.resources
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.csproj.GenerateResource.cache
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.GeneratedMSBuildEditorConfig.editorconfig
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.AssemblyInfoInputs.cache
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.AssemblyInfo.cs
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.csproj.CoreCompileInputs.cache
+Z:\project1\project1\bin\Debug\net6.0-windows\project1.exe
+Z:\project1\project1\bin\Debug\net6.0-windows\project1.deps.json
+Z:\project1\project1\bin\Debug\net6.0-windows\project1.runtimeconfig.json
+Z:\project1\project1\bin\Debug\net6.0-windows\project1.dll
+Z:\project1\project1\bin\Debug\net6.0-windows\ref\project1.dll
+Z:\project1\project1\bin\Debug\net6.0-windows\project1.pdb
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.dll
+Z:\project1\project1\obj\Debug\net6.0-windows\ref\project1.dll
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.pdb
+Z:\project1\project1\obj\Debug\net6.0-windows\project1.genruntimeconfig.cache
+O:\Проект ВСЕМ\project1\project1\bin\Debug\net6.0-windows\project1.exe
+O:\Проект ВСЕМ\project1\project1\bin\Debug\net6.0-windows\project1.deps.json
+O:\Проект ВСЕМ\project1\project1\bin\Debug\net6.0-windows\project1.runtimeconfig.json
+O:\Проект ВСЕМ\project1\project1\bin\Debug\net6.0-windows\project1.dll
+O:\Проект ВСЕМ\project1\project1\bin\Debug\net6.0-windows\ref\project1.dll
+O:\Проект ВСЕМ\project1\project1\bin\Debug\net6.0-windows\project1.pdb
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.csproj.AssemblyReference.cache
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.csproj.ResolveComReference.cache
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.Form1.resources
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.csproj.GenerateResource.cache
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.GeneratedMSBuildEditorConfig.editorconfig
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.AssemblyInfoInputs.cache
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.AssemblyInfo.cs
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.csproj.CoreCompileInputs.cache
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.dll
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\ref\project1.dll
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.pdb
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.genruntimeconfig.cache
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.Form2.resources
+O:\Проект ВСЕМ\project1\project1\obj\Debug\net6.0-windows\project1.Form3.resources

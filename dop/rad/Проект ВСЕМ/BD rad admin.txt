@@ -1,0 +1,18 @@
+CREATE TABLE FuturaInfo(
+	ID serial PRIMARY KEY,
+	idfutura integer,
+	idproduct integer,
+	quantity real,
+	price real,
+	foreign key (idfutura) references futura(id),
+	foreign key (idproduct) references product(id)
+);
+
+create function changetotalsum() returns trigger as $changetotalsum$
+	begin
+		update futura set totalsum = totalsum + new.price*new.quantity where futura.id=new.idfutura;
+	end;
+$changetotalsum$ language plpgsql;
+
+create trigger changetotalsum after insert on futurainfo
+	for each row execute procedure changetotalsum();

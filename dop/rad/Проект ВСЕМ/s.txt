@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Npgsql;
+
+namespace project1
+{
+    public partial class Form2 : Form
+    {
+        NpgsqlConnection conn;
+        string sql;
+        string connection;
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        void UpdateGrid()
+        { 
+            conn = new NpgsqlConnection("Server = localhost; Post = 5432; User Id = postgress; Password = postpass; Database = Lukoshkin");
+            conn.Open();
+            sql = "select*from Client";
+            NpgsqlDataAdapter net = new NpgsqlDataAdapter(sql, conn);
+            DataSet ds = new DataSet();
+            net.Fill(ds);
+            DataTable dt = new DataTable();
+            net.Fill(dt);
+            dt = ds.Tables[0];
+            dataGridView1.DataSource = dt;
+            conn.Close();
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

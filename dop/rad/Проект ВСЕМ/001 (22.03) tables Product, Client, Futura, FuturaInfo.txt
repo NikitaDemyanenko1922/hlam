@@ -1,0 +1,31 @@
+create table Product(
+	ID serial primary key,
+	Name varchar(50),
+	Ed varchar(50)
+);
+
+create table Client(
+	ID serial primary key,
+	Name varchar(50),
+	Adress varchar(50),
+	Phone varchar(20)
+);
+
+create table Futura(
+	ID serial primary key,
+	Data date,
+	IDClient integer,
+	Totalsum real,
+	foreign key(IDClient) references Client (ID)
+);
+
+create table FuturaInfo(
+	ID serial primary key,
+	IDFutura integer,
+	IDProduct integer,
+	Quantity real,
+	Price real,
+	foreign key(IDFutura) references Futura (ID),
+	foreign key(IDProduct) references Product (ID)
+);
+

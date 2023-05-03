@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "iMlyls9BWyZt41FDRFgfQSbFxJXWrUk8j1bR05dhluW4mXMiVeCq5dOFg0z3stUmajBHqoagU3wxJuWqpJzkyA==",
+  "success": true,
+  "projectFilePath": "O:\\Проект ВСЕМ\\002 RAD app_win_forms_ms\\002 RAD app_win_forms_ms\\002 RAD app_win_forms_ms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s0160079\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\s0160079\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
+    "C:\\Users\\s0160079\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

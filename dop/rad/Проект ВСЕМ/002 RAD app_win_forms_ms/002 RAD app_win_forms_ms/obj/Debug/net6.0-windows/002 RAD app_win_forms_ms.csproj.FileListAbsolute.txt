@@ -1,0 +1,21 @@
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\002 RAD app_win_forms_ms.exe
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\002 RAD app_win_forms_ms.deps.json
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\002 RAD app_win_forms_ms.runtimeconfig.json
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\002 RAD app_win_forms_ms.dll
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\ref\002 RAD app_win_forms_ms.dll
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\002 RAD app_win_forms_ms.pdb
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\bin\Debug\net6.0-windows\Npgsql.dll
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.csproj.AssemblyReference.cache
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\_002_RAD_app_win_forms_ms.FormMain.resources
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.csproj.GenerateResource.cache
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.GeneratedMSBuildEditorConfig.editorconfig
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.AssemblyInfoInputs.cache
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.AssemblyInfo.cs
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.csproj.CoreCompileInputs.cache
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.csproj.CopyComplete
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.dll
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\ref\002 RAD app_win_forms_ms.dll
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.pdb
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\002 RAD app_win_forms_ms.genruntimeconfig.cache
+Z:\RAD\002 RAD app_win_forms_ms\002 RAD app_win_forms_ms\obj\Debug\net6.0-windows\_002_RAD_app_win_forms_ms.Form1.resources
