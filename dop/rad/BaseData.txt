@@ -1,0 +1,5 @@
+create table Worker(ID varchar2(10) primary key, name_worker varchar2(150), info_of_worker varchar2(255) );
+create table Zatraty(ID_zatraty varchar2(10) primary key, zatraty_info varchar2(255), price_of_zatrata int);
+create table Summa_Zatrat(ID_worker varchar2(10) foreign key, zatraty varchar2(10) foreign key, price_of_zatrata int, kolvo_ztrat int, summa int);
+crete table Othet(ID_worker varchar2(10) foreign key, zatraty varchar2(10) foreign key, kolvo_ztrat int, summa int );
+
