@@ -30,7 +30,7 @@ void Matr(int A[][100], int n)
 		for (int i = 0; i < n; i++)
 			y[i] = x[i];
 		s = 0;
-	} while (abs(lambda - lambda0) < e);
+	} while (abs(lambda - lambda0) > e);
 	printf("%f\n", lambda);
 	for (int i = 0; i < n; i++)
 		printf("%f\n", y_norm[i]);
