@@ -1,0 +1,52 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void Input(int n, int A[][100])
+{
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
+			cin >> A[i][j];
+}
+
+void Matr(int A[][100], int n)
+{
+	double y[100], x[100], s = 0, y_norm[100], e = 1e-5, lambda, lambda0;
+	int k;
+	for (int i = 0; i < n; i++)
+		y[i] = 0;
+	y[0] = 1;
+	do
+	{
+		for (int i = 0; i < n; i++)
+			s = s + y[i] * y[i];
+		lambda0 = sqrt(s);
+		for (int i = 0; i < n; i++)
+			y_norm[i] = y[i] / lambda0;
+		for (int i = 0; i < n; i++)
+		{
+			x[i] = 0;
+			for (int j = 0; j < n; j++)
+				x[i] = x[i] + A[i][j] * y_norm[j];
+		}
+		s = 0;
+		for (int i = 0; i < n; i++)
+			s = s + x[i] * x[i];
+		lambda = sqrt(s);
+		for (int i = 0; i < n; i++)
+			y[i] = x[i];
+		s = 0;
+	} while (abs(lambda - lambda0) < e);
+	printf("%f\n", lambda);
+	for (int i = 0; i < n; i++)
+		printf("%f\n", y_norm[i]);
+}
+
+int main()
+{
+	int n, A[100][100];
+	n = 3;
+	Input(n, A);
+	Matr(A, n);
+}
