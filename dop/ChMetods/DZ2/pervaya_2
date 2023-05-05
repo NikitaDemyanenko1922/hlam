@@ -44,5 +44,4 @@ int main()
 		for (int j = 0; j < n; j++)
 			cin >> A[i][j];
 	Matr(A, n);
-}Matr(A, n);
 }
