@@ -277,6 +277,7 @@ int main()
 
 
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -322,10 +323,11 @@ void Matr(int A[][100], int n)
 		printf("%f\n", w0norm[i]);
 }
 
-void main()
+int main()
 {
 	int n, A[100][100];
 	//scanf("%d", &n);
 	n = 3;
 	Input(n, A);
 	Matr(A, n);
+}
