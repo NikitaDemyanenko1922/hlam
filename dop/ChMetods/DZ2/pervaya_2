@@ -3,13 +3,6 @@
 
 using namespace std;
 
-void Input(int n, int A[][100])
-{
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < n; j++)
-			cin >> A[i][j];
-}
-
 void Matr(int A[][100], int n)
 {
 	double y[100], x[100], s = 0, y_norm[100], e = 1e-5, lambda, lambda0;
@@ -47,6 +40,9 @@ int main()
 {
 	int n, A[100][100];
 	n = 3;
-	Input(n, A);
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
+			cin >> A[i][j];
 	Matr(A, n);
+}Matr(A, n);
 }
