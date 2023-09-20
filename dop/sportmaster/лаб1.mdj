@@ -258,8 +258,8 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 64,
-							"top": 360,
+							"left": 32,
+							"top": 328,
 							"width": 20,
 							"height": 20
 						},
@@ -283,8 +283,8 @@
 										"$ref": "AAAAAAGKsVgeonCYbk8="
 									},
 									"font": "Arial;13;0",
-									"left": 109,
-									"top": 347,
+									"left": 93,
+									"top": 315,
 									"width": 96.07177734375,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -306,8 +306,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 157,
-									"top": 332,
+									"left": 141,
+									"top": 300,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -327,8 +327,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 157,
-									"top": 377,
+									"left": 141,
+									"top": 345,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -346,7 +346,7 @@
 								"$ref": "AAAAAAGKsVews3CPxyg="
 							},
 							"lineStyle": 2,
-							"points": "83:368;232:368",
+							"points": "51:336;232:336",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsVgeonCae6o="
@@ -369,8 +369,8 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 64,
-							"top": 392,
+							"left": 32,
+							"top": 360,
 							"width": 20,
 							"height": 20
 						},
@@ -394,8 +394,8 @@
 										"$ref": "AAAAAAGKsVkZm3C31Nk="
 									},
 									"font": "Arial;13;0",
-									"left": 86,
-									"top": 379,
+									"left": 70,
+									"top": 347,
 									"width": 142.1748046875,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -417,8 +417,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 157,
-									"top": 364,
+									"left": 141,
+									"top": 332,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -438,8 +438,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 157,
-									"top": 409,
+									"left": 141,
+									"top": 377,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -457,7 +457,7 @@
 								"$ref": "AAAAAAGKsVjzk3CywcY="
 							},
 							"lineStyle": 2,
-							"points": "83:400;232:400",
+							"points": "51:368;232:368",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsVkZnHC50NI="
@@ -480,8 +480,8 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 64,
-							"top": 424,
+							"left": 32,
+							"top": 408,
 							"width": 20,
 							"height": 20
 						},
@@ -505,17 +505,18 @@
 										"$ref": "AAAAAAGKsVngFHDR9vI="
 									},
 									"font": "Arial;13;0",
-									"left": 90,
-									"top": 411,
-									"width": 135.53515625,
-									"height": 13,
+									"left": 29,
+									"top": 388,
+									"width": 224.123046875,
+									"height": 26,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
 										"$ref": "AAAAAAGKsVngFHDS0b8="
 									},
 									"edgePosition": 1,
-									"text": "Информация о товаре"
+									"text": "Информация об имеющихся товарах",
+									"wordWrap": true
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -528,8 +529,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 157,
-									"top": 396,
+									"left": 141,
+									"top": 380,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -549,8 +550,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 157,
-									"top": 441,
+									"left": 141,
+									"top": 425,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -568,7 +569,7 @@
 								"$ref": "AAAAAAGKsVnO6nDOazE="
 							},
 							"lineStyle": 2,
-							"points": "83:432;232:432",
+							"points": "51:416;232:416",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsVngFHDTSHo="
@@ -703,7 +704,7 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 280,
+							"left": 264,
 							"top": 592,
 							"width": 20,
 							"height": 20
@@ -728,12 +729,12 @@
 										"$ref": "AAAAAAGKsV0I7nECMi8="
 									},
 									"font": "Arial;13;0",
-									"left": 247,
+									"left": 240,
 									"top": 616,
 									"width": 59.67431640625,
 									"height": 13,
-									"alpha": -3.2869023525235086,
-									"distance": 82.87339742040264,
+									"alpha": -3.178161395407434,
+									"distance": 82.05485969764375,
 									"hostEdge": {
 										"$ref": "AAAAAAGKsV0I7nEDE0M="
 									},
@@ -751,7 +752,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 258,
+									"left": 242,
 									"top": 533,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -772,7 +773,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 302,
+									"left": 286,
 									"top": 534,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -791,7 +792,7 @@
 								"$ref": "AAAAAAGKsVz8V3D/1so="
 							},
 							"lineStyle": 2,
-							"points": "288:592;288:488",
+							"points": "272:592;272:488",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsV0I7nEEvEQ="
@@ -1370,7 +1371,7 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 64,
+							"left": 32,
 							"top": 456,
 							"width": 20,
 							"height": 20
@@ -1395,7 +1396,7 @@
 										"$ref": "AAAAAAGKsXeWAHIMZ4o="
 									},
 									"font": "Arial;13;0",
-									"left": 86,
+									"left": 70,
 									"top": 443,
 									"width": 142.16845703125,
 									"height": 13,
@@ -1418,7 +1419,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 157,
+									"left": 141,
 									"top": 428,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -1439,7 +1440,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 157,
+									"left": 141,
 									"top": 473,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -1458,7 +1459,7 @@
 								"$ref": "AAAAAAGKsXeEXHIJBX4="
 							},
 							"lineStyle": 2,
-							"points": "83:464;232:464",
+							"points": "51:464;232:464",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsXeWAHIOkjQ="
@@ -1741,7 +1742,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsVRHHHBo0UE="
 					},
-					"name": "Информация о товаре",
+					"name": "Информация об имеющихся товарах",
 					"source": {
 						"$ref": "AAAAAAGKsVnO6XDMKzw="
 					},
