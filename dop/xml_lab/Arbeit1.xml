@@ -1,0 +1,161 @@
+<?xml vertion = "1.0"?>
+<object>
+	<computer idc="1">
+		<name>Electronika1</name>
+		<classification>Laptop</classification>
+		<producer>ChinaPK</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>1</brand>
+		<year_of_issue>2000</year_of_issue>
+		<RAM>1</RAM>
+		<monitor>yes</monitor>
+		<CPU>ЕРРОР</CPU>
+		<diagonal>15'</diagonal>
+		<modem>built in</modem>
+	</computer>
+	<computer idc="2">
+		<name>Electronika2</name>
+		<classification>Personal Сomputer</classification>
+		<producer>АИ-АИ</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>2</brand>
+		<year_of_issue>2002</year_of_issue>
+		<RAM>1</RAM>
+		<monitor>no</monitor>
+		<CPU>ЕРРОР</CPU>
+		<diagonal>15'</diagonal>
+		<modem>not built in</modem>
+	</computer>
+	<computer idc="3">
+		<name>Electronika3</name>
+		<classification>Personal Сomputer</classification>
+		<producer>ChinaPK</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>3</brand>
+		<year_of_issue>2004</year_of_issue>
+		<RAM>2</RAM>
+		<monitor>yes</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="4">
+		<name>Electronika4</name>
+		<classification>Personal Сomputer</classification>
+		<producer>АИ-АИ</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>4</brand>
+		<year_of_issue>2006</year_of_issue>
+		<RAM>2</RAM>
+		<monitor>no</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="5">
+		<name>Electronika5</name>
+		<classification>Laptop</classification>
+		<producer>ChinaPK</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>5</brand>
+		<year_of_issue>2008</year_of_issue>
+		<RAM>4</RAM>
+		<monitor>yes</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="6">
+		<name>Electronika6</name>
+		<classification>Personal Сomputer</classification>
+		<producer>ChinaPK</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>6</brand>
+		<year_of_issue>2009</year_of_issue>
+		<RAM>4</RAM>
+		<monitor>no</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="7">
+		<name>Electronika7</name>
+		<classification>Personal Сomputer</classification>
+		<producer>АИ-АИ</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>7</brand>
+ 		<year_of_issue>2011</year_of_issue>
+		<RAM>4</RAM>
+		<monitor>yes</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="8">
+		<name>Electronika8</name>
+		<classification>Personal Сomputer</classification>
+		<producer>АИ-АИ</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>8</brand>
+		<year_of_issue>2012</year_of_issue>
+		<RAM>4</RAM>
+		<monitor>no</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="9">
+		<name>Electronika9</name>
+		<classification>Personal Сomputer</classification>
+		<producer>ChinaPK</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>9</brand>
+		<year_of_issue>2014</year_of_issue>
+		<RAM>8</RAM>
+		<monitor>no</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<computer idc="10">
+		<name>Electronika10</name>
+		<classification>Laptop</classification>
+		<producer>АИ-АИ</producer>
+		<main_settings>Parameters</main_settings>
+		<application_area>area!</application_area>
+		<brand>10</brand>
+		<year_of_issue>2020</year_of_issue>
+		<RAM>16</RAM>
+		<monitor>yes</monitor>
+		<CPU>ЕРРОР</CPU>
+	</computer>
+	<market idmk="1">
+		<name>DNS1</name>
+	</market>
+	<market idmk="2">
+		<name>DNS2</name>
+	</market>
+	<market idmk="3">
+		<name>DNS3</name>
+	</market>
+	<market idmk="4">
+		<name>DNS4</name>
+	</market>
+	<market idmk="5">
+		<name>DNS5</name>
+	</market>
+	<price_list idpl="1">
+		<price>1</price>
+	</price_list>
+	<price_list idpl="2">
+		<price>2</price>
+	</price_list>
+	<price_list idpl="3">
+		<price>3</price>
+	</price_list>
+	<price_list idpl="4">
+		<price>4</price>
+	</price_list>
+	<price_list idpl="5">
+		<price>5</price>
+	</price_list>
+</object>
+
+
+
+
