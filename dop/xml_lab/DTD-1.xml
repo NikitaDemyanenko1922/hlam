@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT objects (computer, market, price_list)>
+<!ELEMENT computer (name, classification, producer, main_settings, application_area, brand, year_of_issue, CPU, diagonal, modem) 
+<!ATTLIST computer
+          idc ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT classification (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT main_settings (#PCDATA)>
+<!ELEMENT application_area (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT year_of_issue (#PCDATA)>
+<!ELEMENT classification (#PCDATA)>
+<!ELEMENT CPU (#PCDATA)>
+<!ELEMENT diagonal (#PCDATA)>
+<!ELEMENT modem (#PCDATA)>
+
+<!ELEMENT market (name)>
+<!ATTLIST market
+          idm ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT price_list (price)>
+<!ATTLIST price_list
+          idpl ID #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+

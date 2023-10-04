@@ -1,5 +1,5 @@
 <?xml vertion = "1.0"?>
-<object>
+<objects>
 	<computer idc="1">
 		<name>Electronika1</name>
 		<classification>Laptop</classification>
@@ -10,9 +10,9 @@
 		<year_of_issue>2000</year_of_issue>
 		<RAM>1</RAM>
 		<monitor>yes</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Intel</CPU>
 		<diagonal>15'</diagonal>
-		<modem>built in</modem>
+		<modem>modem built in</modem>
 	</computer>
 	<computer idc="2">
 		<name>Electronika2</name>
@@ -24,9 +24,9 @@
 		<year_of_issue>2002</year_of_issue>
 		<RAM>1</RAM>
 		<monitor>no</monitor>
-		<CPU>ЕРРОР</CPU>
-		<diagonal>15'</diagonal>
-		<modem>not built in</modem>
+		<CPU>Intel</CPU>
+		<diagonal>not found</diagonal>
+		<modem>modem not built in</modem>
 	</computer>
 	<computer idc="3">
 		<name>Electronika3</name>
@@ -38,7 +38,9 @@
 		<year_of_issue>2004</year_of_issue>
 		<RAM>2</RAM>
 		<monitor>yes</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Elbruse</CPU>
+		<diagonal>32'</diagonal>
+		<modem>modem built in</modem>
 	</computer>
 	<computer idc="4">
 		<name>Electronika4</name>
@@ -50,7 +52,9 @@
 		<year_of_issue>2006</year_of_issue>
 		<RAM>2</RAM>
 		<monitor>no</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Intel</CPU>
+		<diagonal>not found</diagonal>
+		<modem>modem not built in</modem>
 	</computer>
 	<computer idc="5">
 		<name>Electronika5</name>
@@ -62,7 +66,9 @@
 		<year_of_issue>2008</year_of_issue>
 		<RAM>4</RAM>
 		<monitor>yes</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Intel</CPU>
+		<diagonal>15'</diagonal>
+		<modem>modem not built in</modem>
 	</computer>
 	<computer idc="6">
 		<name>Electronika6</name>
@@ -74,7 +80,9 @@
 		<year_of_issue>2009</year_of_issue>
 		<RAM>4</RAM>
 		<monitor>no</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Baikal</CPU>
+		<diagonal>not founded</diagonal>
+		<modem>modem built in</modem>
 	</computer>
 	<computer idc="7">
 		<name>Electronika7</name>
@@ -86,7 +94,9 @@
  		<year_of_issue>2011</year_of_issue>
 		<RAM>4</RAM>
 		<monitor>yes</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Intel</CPU>
+		<diagonal>6'</diagonal>
+		<modem>modem not built in</modem>
 	</computer>
 	<computer idc="8">
 		<name>Electronika8</name>
@@ -99,6 +109,8 @@
 		<RAM>4</RAM>
 		<monitor>no</monitor>
 		<CPU>ЕРРОР</CPU>
+		<diagonal>not found</diagonal>
+		<modem>modem built in</modem>
 	</computer>
 	<computer idc="9">
 		<name>Electronika9</name>
@@ -111,6 +123,8 @@
 		<RAM>8</RAM>
 		<monitor>no</monitor>
 		<CPU>ЕРРОР</CPU>
+		<diagonal>not found</diagonal>
+		<modem>modem built in</modem>
 	</computer>
 	<computer idc="10">
 		<name>Electronika10</name>
@@ -122,7 +136,9 @@
 		<year_of_issue>2020</year_of_issue>
 		<RAM>16</RAM>
 		<monitor>yes</monitor>
-		<CPU>ЕРРОР</CPU>
+		<CPU>Intel</CPU>
+		<diagonal>15'</diagonal>
+		<modem>modem built in</modem>
 	</computer>
 	<market idmk="1">
 		<name>DNS1</name>
@@ -154,7 +170,22 @@
 	<price_list idpl="5">
 		<price>5</price>
 	</price_list>
-</object>
+	<price_list idpl="6">
+		<price>1</price>
+	</price_list>
+	<price_list idpl="7">
+		<price>2</price>
+	</price_list>
+	<price_list idpl="8">
+		<price>3</price>
+	</price_list>
+	<price_list idpl="9">
+		<price>4</price>
+	</price_list>
+	<price_list idpl="10">
+		<price>5</price>
+	</price_list>
+</objects>
 
 
 
