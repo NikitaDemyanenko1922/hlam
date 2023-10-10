@@ -1369,6 +1369,98 @@
 							"nameLabel": {
 								"$ref": "AAAAAAGLGX67oQLbAl8="
 							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGLGYT/JwLlvjY=",
+							"_parent": {
+								"$ref": "AAAAAAGLGVEpGABurtE="
+							},
+							"model": {
+								"$ref": "AAAAAAGLGYT/JwLjQHo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLGYT/JwLm02U=",
+									"_parent": {
+										"$ref": "AAAAAAGLGYT/JwLlvjY="
+									},
+									"model": {
+										"$ref": "AAAAAAGLGYT/JwLjQHo="
+									},
+									"font": "Arial;13;0",
+									"left": 775,
+									"top": 679,
+									"width": 34.099609375,
+									"height": 13,
+									"alpha": -0.27416753256764625,
+									"distance": 33.24154027718932,
+									"hostEdge": {
+										"$ref": "AAAAAAGLGYT/JwLlvjY="
+									},
+									"edgePosition": 1,
+									"text": "Заказ"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGLGV6oAQG+xww="
+							},
+							"tail": {
+								"$ref": "AAAAAAGLGVq7pQFBg8s="
+							},
+							"lineStyle": 2,
+							"points": "824:652;824:695;673:695",
+							"nameLabel": {
+								"$ref": "AAAAAAGLGYT/JwLm02U="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGLGYUcrALwg4g=",
+							"_parent": {
+								"$ref": "AAAAAAGLGVEpGABurtE="
+							},
+							"model": {
+								"$ref": "AAAAAAGLGYUcqwLuZgo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLGYUcrALx7sU=",
+									"_parent": {
+										"$ref": "AAAAAAGLGYUcrALwg4g="
+									},
+									"model": {
+										"$ref": "AAAAAAGLGYUcqwLuZgo="
+									},
+									"font": "Arial;13;0",
+									"left": 781,
+									"top": 711,
+									"width": 34.099609375,
+									"height": 13,
+									"alpha": -1.3734017284836622,
+									"distance": 10.198039027185569,
+									"hostEdge": {
+										"$ref": "AAAAAAGLGYUcrALwg4g="
+									},
+									"edgePosition": 1,
+									"text": "Заказ"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGLGV6oAQG+xww="
+							},
+							"tail": {
+								"$ref": "AAAAAAGLGVrkvgFNJkk="
+							},
+							"lineStyle": 2,
+							"points": "928:728;673:728",
+							"nameLabel": {
+								"$ref": "AAAAAAGLGYUcrALx7sU="
+							}
 						}
 					]
 				},
@@ -1581,6 +1673,20 @@
 							"target": {
 								"$ref": "AAAAAAGLGViEbAD3KMU="
 							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGLGYT/JwLjQHo=",
+							"_parent": {
+								"$ref": "AAAAAAGLGVq7pQE/oYU="
+							},
+							"name": "Заказ",
+							"source": {
+								"$ref": "AAAAAAGLGVq7pQE/oYU="
+							},
+							"target": {
+								"$ref": "AAAAAAGLGV6oAQG8kB4="
+							}
 						}
 					]
 				},
@@ -1618,6 +1724,20 @@
 							},
 							"target": {
 								"$ref": "AAAAAAGLGViEbAD3KMU="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGLGYUcqwLuZgo=",
+							"_parent": {
+								"$ref": "AAAAAAGLGVrkvgFLIYE="
+							},
+							"name": "Заказ",
+							"source": {
+								"$ref": "AAAAAAGLGVrkvgFLIYE="
+							},
+							"target": {
+								"$ref": "AAAAAAGLGV6oAQG8kB4="
 							}
 						}
 					]
