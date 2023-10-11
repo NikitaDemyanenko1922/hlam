@@ -244,7 +244,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 32,
-							"top": 392,
+							"top": 360,
 							"width": 20,
 							"height": 20
 						},
@@ -269,7 +269,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 66,
-									"top": 379,
+									"top": 347,
 									"width": 142.1748046875,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -292,7 +292,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 137,
-									"top": 364,
+									"top": 332,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -313,7 +313,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 137,
-									"top": 409,
+									"top": 377,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -331,7 +331,7 @@
 								"$ref": "AAAAAAGKsVjzk3CywcY="
 							},
 							"lineStyle": 2,
-							"points": "51:400;224:400",
+							"points": "51:368;224:368",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsVkZnHC50NI="
@@ -723,7 +723,7 @@
 										"$ref": "AAAAAAGKsWnTqHGAcAA="
 									},
 									"edgePosition": 1,
-									"text": "Оборудование"
+									"text": "Поставщик"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -946,7 +946,7 @@
 										"$ref": "AAAAAAGKsXChhnHcsgM="
 									},
 									"edgePosition": 1,
-									"text": "Заказ материалов"
+									"text": "Заявка на заказ материалов"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1057,7 +1057,7 @@
 										"$ref": "AAAAAAGKsXeWAHIN05U="
 									},
 									"edgePosition": 1,
-									"text": "Получение материалов"
+									"text": "Товарная накладная"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1168,7 +1168,7 @@
 										"$ref": "AAAAAAGKsXtYUnI2lR0="
 									},
 									"edgePosition": 1,
-									"text": "Завершение услуг"
+									"text": "Чек"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1231,6 +1231,117 @@
 							},
 							"propertyLabel": {
 								"$ref": "AAAAAAGKsXtYU3I5GoA="
+							}
+						},
+						{
+							"_type": "UMLControlNodeView",
+							"_id": "AAAAAAGLHngcaeHBSKQ=",
+							"_parent": {
+								"$ref": "AAAAAAGKsVRHHHBp6tc="
+							},
+							"model": {
+								"$ref": "AAAAAAGLHngcaOG/g8U="
+							},
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 40,
+							"top": 408,
+							"width": 20,
+							"height": 20
+						},
+						{
+							"_type": "UMLControlFlowView",
+							"_id": "AAAAAAGLHngsAeHFMCo=",
+							"_parent": {
+								"$ref": "AAAAAAGKsVRHHHBp6tc="
+							},
+							"model": {
+								"$ref": "AAAAAAGLHngsAeHE8ac="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHngsAeHGD1A=",
+									"_parent": {
+										"$ref": "AAAAAAGLHngsAeHFMCo="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHngsAeHE8ac="
+									},
+									"font": "Arial;13;0",
+									"left": 75,
+									"top": 396,
+									"width": 133.15478515625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHngsAeHFMCo="
+									},
+									"edgePosition": 1,
+									"text": "Данные о поставщике"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHngsAeHHxwY=",
+									"_parent": {
+										"$ref": "AAAAAAGLHngsAeHFMCo="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHngsAeHE8ac="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 141,
+									"top": 381,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHngsAeHFMCo="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHngsAeHIVWE=",
+									"_parent": {
+										"$ref": "AAAAAAGLHngsAeHFMCo="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHngsAeHE8ac="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 141,
+									"top": 426,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHngsAeHFMCo="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGKsVRYCnBvb74="
+							},
+							"tail": {
+								"$ref": "AAAAAAGLHngcaeHBSKQ="
+							},
+							"lineStyle": 2,
+							"points": "59:417;224:417",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAGLHngsAeHGD1A="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGLHngsAeHHxwY="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGLHngsAeHIVWE="
 							}
 						}
 					]
@@ -1356,6 +1467,14 @@
 						"$ref": "AAAAAAGKsVRHHHBo0UE="
 					},
 					"name": "InitialNode13"
+				},
+				{
+					"_type": "UMLInitialNode",
+					"_id": "AAAAAAGLHngcaOG/g8U=",
+					"_parent": {
+						"$ref": "AAAAAAGKsVRHHHBo0UE="
+					},
+					"name": "InitialNode14"
 				}
 			],
 			"edges": [
@@ -1477,7 +1596,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsVRHHHBo0UE="
 					},
-					"name": "Оборудование",
+					"name": "Поставщик",
 					"source": {
 						"$ref": "AAAAAAGKsWmNeHF60KM="
 					},
@@ -1518,7 +1637,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsVRHHHBo0UE="
 					},
-					"name": "Заказ материалов",
+					"name": "Заявка на заказ материалов",
 					"source": {
 						"$ref": "AAAAAAGKsVRYCXBtqs4="
 					},
@@ -1532,7 +1651,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsVRHHHBo0UE="
 					},
-					"name": "Получение материалов",
+					"name": "Товарная накладная",
 					"source": {
 						"$ref": "AAAAAAGKsXeEW3IHp+Y="
 					},
@@ -1546,12 +1665,26 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsVRHHHBo0UE="
 					},
-					"name": "Завершение услуг",
+					"name": "Чек",
 					"source": {
 						"$ref": "AAAAAAGKsVRYCXBtqs4="
 					},
 					"target": {
 						"$ref": "AAAAAAGKsXsM8nIuNvY="
+					}
+				},
+				{
+					"_type": "UMLControlFlow",
+					"_id": "AAAAAAGLHngsAeHE8ac=",
+					"_parent": {
+						"$ref": "AAAAAAGKsVRHHHBo0UE="
+					},
+					"name": "Данные о поставщике",
+					"source": {
+						"$ref": "AAAAAAGLHngcaOG/g8U="
+					},
+					"target": {
+						"$ref": "AAAAAAGKsVRYCXBtqs4="
 					}
 				}
 			]
@@ -1695,7 +1828,7 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 680,
+							"left": 1248,
 							"top": 920,
 							"width": 20,
 							"height": 20
@@ -1864,7 +1997,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -544,
+											"left": -560,
 											"top": -400,
 											"height": 13
 										},
@@ -1875,7 +2008,7 @@
 												"$ref": "AAAAAAGKsbH/8kVQ36U="
 											},
 											"font": "Arial;13;1",
-											"left": 549,
+											"left": 541,
 											"top": 295,
 											"width": 183,
 											"height": 13,
@@ -1889,7 +2022,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -544,
+											"left": -560,
 											"top": -400,
 											"width": 86.6708984375,
 											"height": 13,
@@ -1903,14 +2036,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -544,
+											"left": -560,
 											"top": -400,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 544,
+									"left": 536,
 									"top": 288,
 									"width": 193,
 									"height": 25,
@@ -1930,7 +2063,7 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 544,
+							"left": 536,
 							"top": 288,
 							"width": 193,
 							"height": 121,
@@ -2339,16 +2472,17 @@
 									},
 									"font": "Arial;13;0",
 									"left": 39,
-									"top": 631,
-									"width": 142.16845703125,
-									"height": 13,
-									"alpha": -3.1614707510746527,
-									"distance": 503.09939375833085,
+									"top": 614,
+									"width": 64.09228515625,
+									"height": 26,
+									"alpha": -3.1784762886377074,
+									"distance": 542.3688781631926,
 									"hostEdge": {
 										"$ref": "AAAAAAGKsbuOlkYy/Ug="
 									},
 									"edgePosition": 1,
-									"text": "Получение материалов"
+									"text": "Товарная накладная",
+									"wordWrap": true
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2529,7 +2663,7 @@
 										"$ref": "AAAAAAGKsbwKdkZV+NQ="
 									},
 									"font": "Arial;13;0",
-									"left": 751,
+									"left": 747,
 									"top": 294,
 									"width": 118.7138671875,
 									"height": 13,
@@ -2539,7 +2673,7 @@
 										"$ref": "AAAAAAGKsbwKdkZWnVY="
 									},
 									"edgePosition": 1,
-									"text": "Завершение услуг"
+									"text": "Чек"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2552,7 +2686,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1124,
+									"left": 1120,
 									"top": 276,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2573,7 +2707,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1124,
+									"left": 1120,
 									"top": 321,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -2592,7 +2726,7 @@
 								"$ref": "AAAAAAGKsbH/8kVPAvk="
 							},
 							"lineStyle": 2,
-							"points": "736:312;1512:312",
+							"points": "728:312;1512:312",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsbwKdkZXo/c="
@@ -2835,9 +2969,9 @@
 											"font": "Arial;13;1",
 											"left": 917,
 											"top": 415,
-											"width": 143,
-											"height": 13,
-											"text": "Работа с отчетом",
+											"width": 145.9326171875,
+											"height": 26,
+											"text": "Работа с отчетом_материалами",
 											"wordWrap": true
 										},
 										{
@@ -2871,8 +3005,8 @@
 									"font": "Arial;13;0",
 									"left": 912,
 									"top": 408,
-									"width": 153,
-									"height": 25,
+									"width": 155.9326171875,
+									"height": 38,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGKsclAbEareDI="
 									},
@@ -2891,7 +3025,7 @@
 							"containerChangeable": true,
 							"left": 912,
 							"top": 408,
-							"width": 153,
+							"width": 155.9326171875,
 							"height": 97,
 							"nameCompartment": {
 								"$ref": "AAAAAAGKsclAbEaq+Zk="
@@ -2982,7 +3116,7 @@
 								"$ref": "AAAAAAGKsbGXCkT2zpg="
 							},
 							"lineStyle": 2,
-							"points": "418:208;512:208;512:336;544:336",
+							"points": "418:208;512:208;512:336;536:336",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsc+YB0dVGk8="
@@ -3078,7 +3212,7 @@
 								"$ref": "AAAAAAGKsclAbEap+DE="
 							},
 							"lineStyle": 2,
-							"points": "1064:472;1160:472;1160:578;1200:578",
+							"points": "1067:472;1160:472;1160:578;1200:578",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsdoV60gUX+Q="
@@ -3110,8 +3244,8 @@
 										"$ref": "AAAAAAGKsdy+zEhvQlM="
 									},
 									"font": "Arial;13;0",
-									"left": 695,
-									"top": 878,
+									"left": 1271,
+									"top": 1006,
 									"width": 88.41650390625,
 									"height": 13,
 									"alpha": -2.9147937235124033,
@@ -3120,7 +3254,7 @@
 										"$ref": "AAAAAAGKsdy+zEhwZp4="
 									},
 									"edgePosition": 1,
-									"text": "Оборудование"
+									"text": "Поставщик"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -3133,8 +3267,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 658,
-									"top": 657,
+									"left": 1234,
+									"top": 785,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3154,8 +3288,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 703,
-									"top": 658,
+									"left": 1279,
+									"top": 786,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -3167,13 +3301,13 @@
 							],
 							"font": "Arial;13;0",
 							"head": {
-								"$ref": "AAAAAAGKsbH/8kVPAvk="
+								"$ref": "AAAAAAGK0WCS/F04TL4="
 							},
 							"tail": {
 								"$ref": "AAAAAAGKsbEX0UTRjZw="
 							},
 							"lineStyle": 2,
-							"points": "688:920;688:408",
+							"points": "1264:920;1264:664",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsdy+zEhxIkQ="
@@ -3269,7 +3403,7 @@
 								"$ref": "AAAAAAGKsbH/8kVPAvk="
 							},
 							"lineStyle": 2,
-							"points": "736:392;872:392;872:448;912:448",
+							"points": "728:392;872:392;872:448;912:448",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGKsd93ZUizBdY="
@@ -4138,6 +4272,117 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAGK0XC1vV61DeY="
 							}
+						},
+						{
+							"_type": "UMLControlNodeView",
+							"_id": "AAAAAAGLHnkxhOHbRqI=",
+							"_parent": {
+								"$ref": "AAAAAAGKsa5RMkJoM1k="
+							},
+							"model": {
+								"$ref": "AAAAAAGLHnkxhOHZlUo="
+							},
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"top": 592,
+							"width": 20,
+							"height": 20
+						},
+						{
+							"_type": "UMLControlFlowView",
+							"_id": "AAAAAAGLHnk8ZOHf748=",
+							"_parent": {
+								"$ref": "AAAAAAGKsa5RMkJoM1k="
+							},
+							"model": {
+								"$ref": "AAAAAAGLHnk8ZOHerAk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHnk8ZOHgxnI=",
+									"_parent": {
+										"$ref": "AAAAAAGLHnk8ZOHf748="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHnk8ZOHerAk="
+									},
+									"font": "Arial;13;0",
+									"left": 32,
+									"top": 572,
+									"width": 73,
+									"height": 26,
+									"alpha": -3.1822356950972264,
+									"distance": 541.4471350002694,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHnk8ZOHf748="
+									},
+									"edgePosition": 1,
+									"text": "Данные о поставщике",
+									"wordWrap": true
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHnk8ZOHhjDY=",
+									"_parent": {
+										"$ref": "AAAAAAGLHnk8ZOHf748="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHnk8ZOHerAk="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 609,
+									"top": 572,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHnk8ZOHf748="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHnk8ZOHiUo4=",
+									"_parent": {
+										"$ref": "AAAAAAGLHnk8ZOHf748="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHnk8ZOHerAk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 609,
+									"top": 617,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHnk8ZOHf748="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGK0WCS/F04TL4="
+							},
+							"tail": {
+								"$ref": "AAAAAAGLHnkxhOHbRqI="
+							},
+							"lineStyle": 2,
+							"points": "19:608;1200:608",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAGLHnk8ZOHgxnI="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGLHnk8ZOHhjDY="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGLHnk8ZOHiUo4="
+							}
 						}
 					]
 				}
@@ -4285,7 +4530,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsa5RMkJn+HM="
 					},
-					"name": "Работа с отчетом"
+					"name": "Работа с отчетом_материалами"
 				},
 				{
 					"_type": "UMLAction",
@@ -4318,6 +4563,14 @@
 						"$ref": "AAAAAAGKsa5RMkJn+HM="
 					},
 					"name": "Работа с материалами"
+				},
+				{
+					"_type": "UMLInitialNode",
+					"_id": "AAAAAAGLHnkxhOHZlUo=",
+					"_parent": {
+						"$ref": "AAAAAAGKsa5RMkJn+HM="
+					},
+					"name": "InitialNode13"
 				}
 			],
 			"edges": [
@@ -4449,7 +4702,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsa5RMkJn+HM="
 					},
-					"name": "Получение материалов",
+					"name": "Товарная накладная",
 					"source": {
 						"$ref": "AAAAAAGKsbD1EUS2LqE="
 					},
@@ -4477,7 +4730,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsa5RMkJn+HM="
 					},
-					"name": "Завершение услуг",
+					"name": "Чек",
 					"source": {
 						"$ref": "AAAAAAGKsbH/8kVNJYU="
 					},
@@ -4625,12 +4878,12 @@
 					"_parent": {
 						"$ref": "AAAAAAGKsa5RMkJn+HM="
 					},
-					"name": "Оборудование",
+					"name": "Поставщик",
 					"source": {
 						"$ref": "AAAAAAGKsbEX0UTPy6c="
 					},
 					"target": {
-						"$ref": "AAAAAAGKsbH/8kVNJYU="
+						"$ref": "AAAAAAGK0WCS+1021LA="
 					}
 				},
 				{
@@ -4760,6 +5013,20 @@
 					},
 					"source": {
 						"$ref": "AAAAAAGKsbELUUTFLbg="
+					},
+					"target": {
+						"$ref": "AAAAAAGK0WCS+1021LA="
+					}
+				},
+				{
+					"_type": "UMLControlFlow",
+					"_id": "AAAAAAGLHnk8ZOHerAk=",
+					"_parent": {
+						"$ref": "AAAAAAGKsa5RMkJn+HM="
+					},
+					"name": "Данные о поставщике",
+					"source": {
+						"$ref": "AAAAAAGLHnkxhOHZlUo="
 					},
 					"target": {
 						"$ref": "AAAAAAGK0WCS+1021LA="
@@ -5305,7 +5572,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 1240,
-							"top": 480,
+							"top": 488,
 							"width": 20,
 							"height": 20
 						},
@@ -5320,7 +5587,7 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 504,
+							"left": 448,
 							"top": 736,
 							"width": 20,
 							"height": 20
@@ -5451,7 +5718,7 @@
 										"$ref": "AAAAAAGK0UIsFlpq7KE="
 									},
 									"edgePosition": 1,
-									"text": "Получение материалов"
+									"text": "Товарная накладная"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5536,17 +5803,17 @@
 										"$ref": "AAAAAAGK0UJw2Vp7Tqg="
 									},
 									"font": "Arial;13;0",
-									"left": 888,
-									"top": 462,
+									"left": 904,
+									"top": 479,
 									"width": 193,
-									"height": 26,
-									"alpha": -3.3989164009443056,
-									"distance": 78.587530817554,
+									"height": 13,
+									"alpha": -3.3067413580314513,
+									"distance": 60.8276253029822,
 									"hostEdge": {
 										"$ref": "AAAAAAGK0UJw2Vp84n4="
 									},
 									"edgePosition": 1,
-									"text": "Информация о имеющихся материалах",
+									"text": "Заявка на заказ материалов",
 									"wordWrap": true
 								},
 								{
@@ -5846,8 +6113,8 @@
 											"left": 765,
 											"top": 439,
 											"width": 111,
-											"height": 52,
-											"text": "Дополнение отчета с учетом полученных материалов",
+											"height": 39,
+											"text": "Формирование заявки на заказ материалов",
 											"wordWrap": true
 										},
 										{
@@ -5882,7 +6149,7 @@
 									"left": 760,
 									"top": 432,
 									"width": 121,
-									"height": 64,
+									"height": 51,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK0URe8Vr7NH8="
 									},
@@ -5951,7 +6218,7 @@
 											"top": 287,
 											"width": 103,
 											"height": 52,
-											"text": "Составление отчета потраченных материалах",
+											"text": "Формирование отчета о затраченных материалах",
 											"wordWrap": true
 										},
 										{
@@ -6033,16 +6300,16 @@
 									},
 									"font": "Arial;13;0",
 									"left": 376,
-									"top": 310,
+									"top": 317,
 									"width": 57.6748046875,
-									"height": 26,
+									"height": 13,
 									"alpha": -1.8577352831582041,
 									"distance": 254.40125785852553,
 									"hostEdge": {
 										"$ref": "AAAAAAGK0UU02Vsu+jI="
 									},
 									"edgePosition": 1,
-									"text": "Отправка отчета",
+									"text": "Отчет",
 									"wordWrap": true
 								},
 								{
@@ -6338,8 +6605,8 @@
 											"left": 437,
 											"top": 423,
 											"width": 159,
-											"height": 39,
-											"text": "Составление отчета о полученных материалах",
+											"height": 13,
+											"text": "Прием товара",
 											"wordWrap": true
 										},
 										{
@@ -6374,7 +6641,7 @@
 									"left": 432,
 									"top": 416,
 									"width": 169,
-									"height": 51,
+									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK0VyP5VzAJeU="
 									},
@@ -6430,7 +6697,7 @@
 										"$ref": "AAAAAAGK0V2XilzlEhs="
 									},
 									"edgePosition": 1,
-									"text": "Отправка отчёта"
+									"text": "Отчет"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6704,12 +6971,12 @@
 										"$ref": "AAAAAAGK0WTUE13RisI="
 									},
 									"font": "Arial;13;0",
-									"left": 518,
+									"left": 383,
 									"top": 679,
 									"width": 70.41455078125,
 									"height": 13,
-									"alpha": -2.5686263075285334,
-									"distance": 73.78346698278686,
+									"alpha": -3.698716836360852,
+									"distance": 71.8679344353238,
 									"hostEdge": {
 										"$ref": "AAAAAAGK0WTUE13SqXA="
 									},
@@ -6727,7 +6994,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 483,
+									"left": 426,
 									"top": 617,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -6748,7 +7015,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 528,
+									"left": 471,
 									"top": 618,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -6767,7 +7034,7 @@
 								"$ref": "AAAAAAGK0UA3AFokJns="
 							},
 							"lineStyle": 2,
-							"points": "513:736;513:512",
+							"points": "456:736;456:512",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGK0WTUE13T8rs="
@@ -6800,7 +7067,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 420,
+									"left": 393,
 									"top": 713,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -6821,7 +7088,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 420,
+									"left": 393,
 									"top": 728,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -6842,7 +7109,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 421,
+									"left": 394,
 									"top": 683,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -6861,7 +7128,7 @@
 								"$ref": "AAAAAAGK0UA3AFokJns="
 							},
 							"lineStyle": 2,
-							"points": "512:736;512:704;331:704;331:360",
+							"points": "457:736;457:704;331:704;331:360",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGK0WVHu13p6PI="
@@ -6894,7 +7161,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 640,
+									"left": 632,
 									"top": 683,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -6915,7 +7182,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 640,
+									"left": 632,
 									"top": 668,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -6936,7 +7203,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 640,
+									"left": 632,
 									"top": 713,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -6955,7 +7222,7 @@
 								"$ref": "AAAAAAGK0UA3AFokJns="
 							},
 							"lineStyle": 2,
-							"points": "512:736;512:704;769:704;769:520",
+							"points": "457:736;457:704;808:704;808:520",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGK0WVVul36RgE="
@@ -6965,6 +7232,101 @@
 							},
 							"propertyLabel": {
 								"$ref": "AAAAAAGK0WVVul38gYY="
+							}
+						},
+						{
+							"_type": "UMLControlFlowView",
+							"_id": "AAAAAAGLHoHjBeIWlok=",
+							"_parent": {
+								"$ref": "AAAAAAGK0T+rIlnl5yM="
+							},
+							"model": {
+								"$ref": "AAAAAAGLHoHjBeIVnHo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHoHjBeIXWpI=",
+									"_parent": {
+										"$ref": "AAAAAAGLHoHjBeIWlok="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHoHjBeIVnHo="
+									},
+									"font": "Arial;13;0",
+									"left": 575,
+									"top": 672,
+									"width": 66.6630859375,
+									"height": 13,
+									"alpha": -0.6783707379090185,
+									"distance": 86.05230967266364,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHoHjBeIWlok="
+									},
+									"edgePosition": 1,
+									"text": "Поставщик"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHoHjBeIYpOk=",
+									"_parent": {
+										"$ref": "AAAAAAGLHoHjBeIWlok="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHoHjBeIVnHo="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 524,
+									"top": 738,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHoHjBeIWlok="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGLHoHjBeIZcc0=",
+									"_parent": {
+										"$ref": "AAAAAAGLHoHjBeIWlok="
+									},
+									"model": {
+										"$ref": "AAAAAAGLHoHjBeIVnHo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 569,
+									"top": 739,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGLHoHjBeIWlok="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGK0VyP5Vy+Q5s="
+							},
+							"tail": {
+								"$ref": "AAAAAAGK0UA3AFokJns="
+							},
+							"lineStyle": 2,
+							"points": "467:745;554:745;554:512",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAGLHoHjBeIXWpI="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGLHoHjBeIYpOk="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGLHoHjBeIZcc0="
 							}
 						}
 					]
@@ -7057,7 +7419,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Дополнение отчета с учетом полученных материалов"
+					"name": "Формирование заявки на заказ материалов"
 				},
 				{
 					"_type": "UMLAction",
@@ -7065,7 +7427,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Составление отчета потраченных материалах"
+					"name": "Формирование отчета о затраченных материалах"
 				},
 				{
 					"_type": "UMLAction",
@@ -7073,7 +7435,15 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Составление отчета о полученных материалах"
+					"name": "Прием товара"
+				},
+				{
+					"_type": "UMLInitialNode",
+					"_id": "AAAAAAGLHoHR/uIQMIk=",
+					"_parent": {
+						"$ref": "AAAAAAGK0T+rIlnkCB4="
+					},
+					"name": "InitialNode9"
 				}
 			],
 			"edges": [
@@ -7111,7 +7481,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Получение материалов",
+					"name": "Товарная накладная",
 					"source": {
 						"$ref": "AAAAAAGK0UAhWFoJx3k="
 					},
@@ -7125,7 +7495,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Информация о имеющихся материалах",
+					"name": "Заявка на заказ материалов",
 					"source": {
 						"$ref": "AAAAAAGK0URe8Fr3t/8="
 					},
@@ -7181,7 +7551,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Отправка отчета",
+					"name": "Отчет",
 					"source": {
 						"$ref": "AAAAAAGK0UTQt1sShYU="
 					},
@@ -7221,7 +7591,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK0T+rIlnkCB4="
 					},
-					"name": "Отправка отчёта",
+					"name": "Отчет",
 					"source": {
 						"$ref": "AAAAAAGK0VyP5Vy8DKY="
 					},
@@ -7320,6 +7690,20 @@
 					},
 					"target": {
 						"$ref": "AAAAAAGK0URe8Fr3t/8="
+					}
+				},
+				{
+					"_type": "UMLControlFlow",
+					"_id": "AAAAAAGLHoHjBeIVnHo=",
+					"_parent": {
+						"$ref": "AAAAAAGK0T+rIlnkCB4="
+					},
+					"name": "Поставщик",
+					"source": {
+						"$ref": "AAAAAAGK0UA3AFoi6zw="
+					},
+					"target": {
+						"$ref": "AAAAAAGK0VyP5Vy8DKY="
 					}
 				}
 			]
