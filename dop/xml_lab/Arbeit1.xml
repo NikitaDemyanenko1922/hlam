@@ -1,192 +1,224 @@
 <?xml vertion = "1.0"?>
 <objects>
-	<computer idc="1">
-		<name>Electronika1</name>
-		<classification>Laptop</classification>
-		<producer>ChinaPK</producer>
+	<computer idpc="1">
+		<name>Название: Electronika1</name>
+		<classification>Классификация: Laptop</classification>
+		<producer>Фирма: ChinaPK</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>1</brand>
-		<year_of_issue>2000</year_of_issue>
+		<brand>Марка: 1</brand>
+		<year_of_issue>Год выпуска: 2000</year_of_issue>
 		<RAM>1</RAM>
-		<monitor>yes</monitor>
-		<CPU>Intel</CPU>
-		<diagonal>15'</diagonal>
-		<modem>modem built in</modem>
+		<monitor>Монитор: да</monitor>
+		<CPU>Процессор: Intel</CPU>
+		<diagonal>Диагональ: 15'</diagonal>
+		<modem>Модем встроен</modem>
 	</computer>
-	<computer idc="2">
-		<name>Electronika2</name>
-		<classification>Personal Сomputer</classification>
-		<producer>АИ-АИ</producer>
+	<computer idpc="2">
+		<name>Название: Electronika2</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: АИ-АИ</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>2</brand>
-		<year_of_issue>2002</year_of_issue>
+		<brand>Марка: 2</brand>
+		<year_of_issue>Год выпуска: 2002</year_of_issue>
 		<RAM>1</RAM>
-		<monitor>no</monitor>
-		<CPU>Intel</CPU>
-		<diagonal>not found</diagonal>
-		<modem>modem not built in</modem>
+		<monitor>Монитор: нет</monitor>
+		<CPU>Процессор: Intel</CPU>
+		<diagonal>Диагональ: отсутствует</diagonal>
+		<modem>Модем не встроен</modem>
 	</computer>
-	<computer idc="3">
-		<name>Electronika3</name>
-		<classification>Personal Сomputer</classification>
-		<producer>ChinaPK</producer>
+	<computer idpc="3">
+		<name>Название: Electronika3</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: ChinaPK</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>3</brand>
-		<year_of_issue>2004</year_of_issue>
+		<brand>Марка: 3</brand>
+		<year_of_issue>Год выпуска: 2004</year_of_issue>
 		<RAM>2</RAM>
-		<monitor>yes</monitor>
-		<CPU>Elbruse</CPU>
-		<diagonal>32'</diagonal>
-		<modem>modem built in</modem>
+		<monitor>Монитор: да</monitor>
+		<CPU>Процессор: Elbruse</CPU>
+		<diagonal>Диагональ: 32'</diagonal>
+		<modem>Модем встроен</modem>
 	</computer>
-	<computer idc="4">
-		<name>Electronika4</name>
-		<classification>Personal Сomputer</classification>
-		<producer>АИ-АИ</producer>
+	<computer idpc="4">
+		<name>Название: Electronika4</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: АИ-АИ</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>4</brand>
-		<year_of_issue>2006</year_of_issue>
+		<brand>Марка: 4</brand>
+		<year_of_issue>Год выпуска: 2006</year_of_issue>
 		<RAM>2</RAM>
-		<monitor>no</monitor>
-		<CPU>Intel</CPU>
-		<diagonal>not found</diagonal>
-		<modem>modem not built in</modem>
+		<monitor>Монитор: нет</monitor>
+		<CPU>Процессор: Intel</CPU>
+		<diagonal>Диагональ: отсутствует</diagonal>
+		<modem>Модем не встроен</modem>
 	</computer>
-	<computer idc="5">
-		<name>Electronika5</name>
-		<classification>Laptop</classification>
-		<producer>ChinaPK</producer>
+	<computer idpc="5">
+		<name>Название: Electronika5</name>
+		<classification>Классификация: Laptop</classification>
+		<producer>Фирма: ChinaPK</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>5</brand>
-		<year_of_issue>2008</year_of_issue>
+		<brand>Марка: 5</brand>
+		<year_of_issue>Год выпуска: 2008</year_of_issue>
 		<RAM>4</RAM>
-		<monitor>yes</monitor>
-		<CPU>Intel</CPU>
-		<diagonal>15'</diagonal>
-		<modem>modem not built in</modem>
+		<monitor>Монитор: да</monitor>
+		<CPU>Процессор: Intel</CPU>
+		<diagonal>Диагональ: 15'</diagonal>
+		<modem>Модем не встроен</modem>
 	</computer>
-	<computer idc="6">
-		<name>Electronika6</name>
-		<classification>Personal Сomputer</classification>
-		<producer>ChinaPK</producer>
+	<computer idpc="6">
+		<name>Название: Electronika6</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: ChinaPK</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>6</brand>
-		<year_of_issue>2009</year_of_issue>
+		<brand>Марка: 6</brand>
+		<year_of_issue>Год выпуска: 2009</year_of_issue>
 		<RAM>4</RAM>
-		<monitor>no</monitor>
-		<CPU>Baikal</CPU>
-		<diagonal>not founded</diagonal>
-		<modem>modem built in</modem>
+		<monitor>Монитор: нет</monitor>
+		<CPU>Процессор: Baikal</CPU>
+		<diagonal>Диагональ: отсутствует</diagonal>
+		<modem>Модем встроен</modem>
 	</computer>
-	<computer idc="7">
-		<name>Electronika7</name>
-		<classification>Personal Сomputer</classification>
-		<producer>АИ-АИ</producer>
+	<computer idpc="7">
+		<name>Название: Electronika7</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: АИ-АИ</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>7</brand>
- 		<year_of_issue>2011</year_of_issue>
+		<brand>Марка: 7</brand>
+ 		<year_of_issue>Год выпуска: 2011</year_of_issue>
 		<RAM>4</RAM>
-		<monitor>yes</monitor>
-		<CPU>Intel</CPU>
-		<diagonal>6'</diagonal>
-		<modem>modem not built in</modem>
+		<monitor>Монитор: да</monitor>
+		<CPU>Процессор: Intel</CPU>
+		<diagonal>Диагональ: 6'</diagonal>
+		<modem>Модем не встроен</modem>
 	</computer>
-	<computer idc="8">
-		<name>Electronika8</name>
-		<classification>Personal Сomputer</classification>
-		<producer>АИ-АИ</producer>
+	<computer idpc="8">
+		<name>Название: Electronika8</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: АИ-АИ</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>8</brand>
-		<year_of_issue>2012</year_of_issue>
+		<brand>Марка: 8</brand>
+		<year_of_issue>Год выпуска: 2012</year_of_issue>
 		<RAM>4</RAM>
-		<monitor>no</monitor>
-		<CPU>ЕРРОР</CPU>
-		<diagonal>not found</diagonal>
-		<modem>modem built in</modem>
+		<monitor>Монитор: нет</monitor>
+		<CPU>Процессор: ЕРРОР</CPU>
+		<diagonal>Диагональ: отсутствует</diagonal>
+		<modem>Модем встроен</modem>
 	</computer>
-	<computer idc="9">
-		<name>Electronika9</name>
-		<classification>Personal Сomputer</classification>
-		<producer>ChinaPK</producer>
+	<computer idpc="9">
+		<name>Название: Electronika9</name>
+		<classification>Классификация: Personal Сomputer</classification>
+		<producer>Фирма: ChinaPK</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>9</brand>
-		<year_of_issue>2014</year_of_issue>
+		<brand>Марка: 9</brand>
+		<year_of_issue>Год выпуска: 2014</year_of_issue>
 		<RAM>8</RAM>
-		<monitor>no</monitor>
-		<CPU>ЕРРОР</CPU>
-		<diagonal>not found</diagonal>
-		<modem>modem built in</modem>
+		<monitor>Монитор: нет</monitor>
+		<CPU>Процессор: ЕРРОР</CPU>
+		<diagonal>Диагональ: отсутствует</diagonal>
+		<modem>Модем встроен</modem>
 	</computer>
-	<computer idc="10">
-		<name>Electronika10</name>
-		<classification>Laptop</classification>
-		<producer>АИ-АИ</producer>
+	<computer idpc="10">
+		<name>Название: Electronika10</name>
+		<classification>Классификация: Laptop</classification>
+		<producer>Фирма: АИ-АИ</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>10</brand>
-		<year_of_issue>2020</year_of_issue>
+		<brand>Марка: 10</brand>
+		<year_of_issue>Год выпуска: 2020</year_of_issue>
 		<RAM>16</RAM>
-		<monitor>yes</monitor>
-		<CPU>Intel</CPU>
-		<diagonal>15'</diagonal>
-		<modem>modem built in</modem>
+		<monitor>Монитор: да</monitor>
+		<CPU>Процессор: Intel</CPU>
+		<diagonal>Диагональ: 15'</diagonal>
+		<modem>Модем встроен</modem>
 	</computer>
 	<market idmk="1">
-		<name>DNS1</name>
+		<name>Магазин: Seltsam</name>
 	</market>
 	<market idmk="2">
-		<name>DNS2</name>
+		<name>Магазин: KMS</name>
 	</market>
 	<market idmk="3">
-		<name>DNS3</name>
+		<name>Магазин: DNS</name>
 	</market>
 	<market idmk="4">
-		<name>DNS4</name>
+		<name>Магазин: Knits</name>
 	</market>
 	<market idmk="5">
-		<name>DNS5</name>
+		<name>Магазин: Sogar</name>
 	</market>
-	<price_list idpl="1">
+	<price_list idmk="1" idpc="1">
 		<price>1</price>
 	</price_list>
-	<price_list idpl="2">
-		<price>2</price>
-	</price_list>
-	<price_list idpl="3">
-		<price>3</price>
-	</price_list>
-	<price_list idpl="4">
-		<price>4</price>
-	</price_list>
-	<price_list idpl="5">
-		<price>5</price>
-	</price_list>
-	<price_list idpl="6">
+    <price_list idmk="1" idpc="3">
 		<price>1</price>
 	</price_list>
-	<price_list idpl="7">
+    <price_list idmk="1" idpc="5">
+		<price>1</price>
+	</price_list>
+	<price_list idmk="1" idpc="7">
 		<price>2</price>
 	</price_list>
-	<price_list idpl="8">
-		<price>3</price>
+  	<price_list idmk="1" idpc="9">
+		<price>2</price>
 	</price_list>
-	<price_list idpl="9">
-		<price>4</price>
+	<price_list idmk="2" idpc="6">
+		<price>1</price>
 	</price_list>
-	<price_list idpl="10">
-		<price>5</price>
+    <price_list idmk="2" idpc="7">
+		<price>1</price>
+	</price_list>
+    <price_list idmk="2" idpc="8">
+		<price>1</price>
+	</price_list>
+	<price_list idmk="2" idpc="9">
+		<price>2</price>
+	</price_list>
+  	<price_list idmk="2" idpc="10">
+		<price>2</price>
+	</price_list>
+	<price_list idmk="3" idpc="10">
+		<price>2</price>
+	</price_list>
+  	<price_list idmk="3" idpc="8">
+		<price>2</price>
+	</price_list>
+	<price_list idmk="4" idpc="6">
+		<price>1</price>
+	</price_list>
+    <price_list idmk="4" idpc="7">
+		<price>1</price>
+	</price_list>
+    <price_list idmk="4" idpc="8">
+		<price>1</price>
+	</price_list>
+	<price_list idmk="4" idpc="9">
+		<price>2</price>
+	</price_list>
+  	<price_list idmk="4" idpc="10">
+		<price>2</price>
+	</price_list>
+	<price_list idmk="5" idpc="2">
+		<price>1</price>
+	</price_list>
+    <price_list idmk="5" idpc="4">
+		<price>1</price>
+	</price_list>
+    <price_list idmk="5" idpc="6">
+		<price>1</price>
+	</price_list>
+	<price_list idmk="5" idpc="8">
+		<price>2</price>
+	</price_list>
+  	<price_list idmk="5" idpc="10">
+		<price>2</price>
 	</price_list>
 </objects>
-
-
-
-
