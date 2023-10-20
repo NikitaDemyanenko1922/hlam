@@ -23,7 +23,7 @@ prod_num(N,A,S):-
     prod_num(N2,A,S1).
 
 %summa vseh delitiley
-div_sum(Value, Sum):-div_sum(1, Value, Value, Sum).
+div_sum(Value, Sum):-div_sum(2, Value, Value, Sum).
 div_sum(I, N, _Value, Sum):-
     I >= N, !, Sum is 0.
 div_sum(I, N, Value, Sum):-
@@ -37,29 +37,29 @@ div_sum(I, N, Value, Sum):-
     Sum is TailSum.
 
 %summa vseh delitiley po zadaniyu
-zadacha_div_sum(Value, Sum):-zadacha_div_sum(1, Value, Value, Sum).
+zadacha_div_sum(Value, Sum):-zadacha_div_sum(2, Value, Value, Sum).
 zadacha_div_sum(I, N, _Value, Sum):-
     I >= N, !, Sum is 0.
 zadacha_div_sum(I, N, Value, Sum):-
     0 is Value mod I, !,
     NextI is I + 1,
     zadacha_div_sum(NextI, N, Value, TailSum),
-    Sum is TailSum + I.
+    %(co_primes(I,15), \+co_primes(I,49)) ->
+    %Sum is TailSum + I;
+    Sum is TailSum.
 zadacha_div_sum(I, N, Value, Sum):-
     NextI is I + 1,
     zadacha_div_sum(NextI, N, Value, TailSum),
     Sum is TailSum.
 
-co_primes(A, B, Answer):- gcd(A, B, 1).
+co_primes(A, B):- gcd2(A, B, 1).
 
-gcd(0, B, B):- !.
-gcd(A, 0, A):- !.
-gcd(0, B, 1):- !. %sdelat vivod false
-gcd(A, 0, 1):- !. %sdelat vivod false 32476349826y4378t87egpiruhgpuifbh
-
-gcd(A, B, X):- A >= B, M is A mod B, gcd(M, B, X).
-gcd(A, B, X):- A < B, M is B mod A, gcd(A, M, X).
-
+gcd2(X, Y, G) :- X = Y, G = X.
+gcd2(X, Y, G) :-
+  X < Y,
+  Y1 is Y - X,
+  gcd2(X, Y1, G).
+gcd2(X, Y, G) :- X > Y, gcd2(Y, X, G).
 
 
 
