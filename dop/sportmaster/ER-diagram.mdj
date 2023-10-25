@@ -2403,8 +2403,8 @@
 										"$ref": "AAAAAAGLZp06x5BXsNs="
 									},
 									"font": "Arial;13;1",
-									"left": 936,
-									"top": 429,
+									"left": 928,
+									"top": 445,
 									"width": 140.119140625,
 									"height": 13,
 									"text": "Сотрудники"
@@ -2429,8 +2429,8 @@
 												"$ref": "AAAAAAGLZp1iNZBiO30="
 											},
 											"font": "Arial;13;0",
-											"left": 941,
-											"top": 452,
+											"left": 933,
+											"top": 468,
 											"width": 130.119140625,
 											"height": 13
 										},
@@ -2444,8 +2444,8 @@
 												"$ref": "AAAAAAGLZp2tP5Bpueo="
 											},
 											"font": "Arial;13;0",
-											"left": 941,
-											"top": 467,
+											"left": 933,
+											"top": 483,
 											"width": 130.119140625,
 											"height": 13
 										},
@@ -2459,8 +2459,8 @@
 												"$ref": "AAAAAAGLZp3k95Bwlbg="
 											},
 											"font": "Arial;13;0",
-											"left": 941,
-											"top": 482,
+											"left": 933,
+											"top": 498,
 											"width": 130.119140625,
 											"height": 13
 										},
@@ -2474,8 +2474,8 @@
 												"$ref": "AAAAAAGLZp4JB5B3HvI="
 											},
 											"font": "Arial;13;0",
-											"left": 941,
-											"top": 497,
+											"left": 933,
+											"top": 513,
 											"width": 130.119140625,
 											"height": 13
 										},
@@ -2489,22 +2489,22 @@
 												"$ref": "AAAAAAGLZp5yK5B+LJc="
 											},
 											"font": "Arial;13;0",
-											"left": 941,
-											"top": 512,
+											"left": 933,
+											"top": 528,
 											"width": 130.119140625,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 936,
-									"top": 447,
+									"left": 928,
+									"top": 463,
 									"width": 140.119140625,
 									"height": 83
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 936,
-							"top": 424,
+							"left": 928,
+							"top": 440,
 							"width": 140.119140625,
 							"height": 121,
 							"nameLabel": {
@@ -2550,7 +2550,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 987,
-									"top": 563,
+									"top": 579,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -2584,7 +2584,7 @@
 								"$ref": "AAAAAAGLZp06x5BXsNs="
 							},
 							"lineStyle": 2,
-							"points": "972:544;972:656;865:656",
+							"points": "972:560;972:656;865:656",
 							"nameLabel": {
 								"$ref": "AAAAAAGLZp8fupCKcig="
 							},
@@ -3504,7 +3504,8 @@
 								"$ref": "AAAAAAGLYXj9ckd8QeA="
 							},
 							"name": "id точки привязки",
-							"length": 0
+							"length": 0,
+							"foreignKey": true
 						}
 					]
 				},
