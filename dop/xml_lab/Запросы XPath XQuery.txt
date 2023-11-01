@@ -8,13 +8,11 @@ https://videlibri.sourceforge.net/cgi-bin/xidelcgi
 
 б)	марки компьютеров, выпущенных до 2006 г., продающихся в нескольких магазинах;
 
-&&&//brand[./../year_of_issue<"2006" and ./../&&&"]
-//computer[./@idpc=//price_list[./@idpc=./following-sibling::price_list/@idpc]/@idpc]/brand
-&&&//brand[./../&&&"]
+//computer[./@idpc=//price_list[./@idpc=./following-sibling::price_list/@idpc]/@idpc and year_of_issue_global/year_of_issue<"2006"]/brand
 
 в)	компьютеры с объемом оперативной памяти больше заданного (например, 2 Гб);
 
-//name[./../RAM>2]
+//name[./..//RAM>2]
 
 г)	компьютеры, которые продаются без мониторов;
 
@@ -28,7 +26,7 @@ https://videlibri.sourceforge.net/cgi-bin/xidelcgi
 
 а)	компьютеры с процессорами Intel и цены на них;
 
-
+/objects/computer[CPU="Процессор: Intel"]
 
 б)	список магазинов, продающих компьютеры фирмы "АИ-АИ", упорядоченный по возрастанию цен;
 
@@ -38,8 +36,14 @@ https://videlibri.sourceforge.net/cgi-bin/xidelcgi
 
 
 
-г)	существует ли такая фирма, чьи компьютеры стоимости < 1000 продаются во всех магазинах.
+г)	существует ли такая фирма, чьи компьютеры стоимости < 1000 продаются во всех магазинах ([хотя бы один в каждом]).
 
 
 
 5.	Еще 2-3 "содержательных" XQuery-запроса к Вашей БД.
+
+
+Examples^^^
+/objects/computer[CPU="Процессор: Intel" and classification="Классификация: Laptop"]
+
+/objects/computer[CPU="Процессор: Intel"], /objects/price_list[price=1000]

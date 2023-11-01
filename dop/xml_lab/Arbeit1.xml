@@ -7,8 +7,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 1</brand>
-		<year_of_issue>Год выпуска: 2000</year_of_issue>
-		<RAM>1</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2000</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>1</RAM></RAM_global>
 		<monitor>Монитор: да</monitor>
 		<CPU>Процессор: Intel</CPU>
 		<diagonal>Диагональ: 15'</diagonal>
@@ -21,8 +21,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 2</brand>
-		<year_of_issue>Год выпуска: 2002</year_of_issue>
-		<RAM>1</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2002</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>1</RAM></RAM_global>
 		<monitor>Монитор: нет</monitor>
 		<CPU>Процессор: Intel</CPU>
 		<diagonal>Диагональ: отсутствует</diagonal>
@@ -35,8 +35,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 3</brand>
-		<year_of_issue>Год выпуска: 2004</year_of_issue>
-		<RAM>2</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2004</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>2</RAM></RAM_global>
 		<monitor>Монитор: да</monitor>
 		<CPU>Процессор: Elbruse</CPU>
 		<diagonal>Диагональ: 32'</diagonal>
@@ -49,8 +49,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 4</brand>
-		<year_of_issue>Год выпуска: 2006</year_of_issue>
-		<RAM>2</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2006</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>2</RAM></RAM_global>
 		<monitor>Монитор: нет</monitor>
 		<CPU>Процессор: Intel</CPU>
 		<diagonal>Диагональ: отсутствует</diagonal>
@@ -63,8 +63,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 5</brand>
-		<year_of_issue>Год выпуска: 2008</year_of_issue>
-		<RAM>4</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2008</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>4</RAM></RAM_global>
 		<monitor>Монитор: да</monitor>
 		<CPU>Процессор: Intel</CPU>
 		<diagonal>Диагональ: 15'</diagonal>
@@ -77,8 +77,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 6</brand>
-		<year_of_issue>Год выпуска: 2009</year_of_issue>
-		<RAM>4</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2009</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>4</RAM></RAM_global>
 		<monitor>Монитор: нет</monitor>
 		<CPU>Процессор: Baikal</CPU>
 		<diagonal>Диагональ: отсутствует</diagonal>
@@ -91,8 +91,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 7</brand>
- 		<year_of_issue>Год выпуска: 2011</year_of_issue>
-		<RAM>4</RAM>
+ 		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2011</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>4</RAM></RAM_global>
 		<monitor>Монитор: да</monitor>
 		<CPU>Процессор: Intel</CPU>
 		<diagonal>Диагональ: 6'</diagonal>
@@ -104,9 +104,9 @@
 		<producer>Фирма: АИ-АИ</producer>
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
-		<brand>Марка: 8</brand>
-		<year_of_issue>Год выпуска: 2012</year_of_issue>
-		<RAM>4</RAM>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>8</RAM></RAM_global>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2012</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>4</RAM></RAM_global>
 		<monitor>Монитор: нет</monitor>
 		<CPU>Процессор: ЕРРОР</CPU>
 		<diagonal>Диагональ: отсутствует</diagonal>
@@ -119,8 +119,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 9</brand>
-		<year_of_issue>Год выпуска: 2014</year_of_issue>
-		<RAM>8</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2014</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>8</RAM></RAM_global>
 		<monitor>Монитор: нет</monitor>
 		<CPU>Процессор: ЕРРОР</CPU>
 		<diagonal>Диагональ: отсутствует</diagonal>
@@ -133,8 +133,8 @@
 		<main_settings>Parameters</main_settings>
 		<application_area>area!</application_area>
 		<brand>Марка: 10</brand>
-		<year_of_issue>Год выпуска: 2020</year_of_issue>
-		<RAM>16</RAM>
+		<year_of_issue_global><title_year_of_issue>Год производства: </title_year_of_issue><year_of_issue>2020</year_of_issue></year_of_issue_global>
+		<RAM_global><title_ram>Оперативная память: </title_ram><RAM>16</RAM></RAM_global>
 		<monitor>Монитор: да</monitor>
 		<CPU>Процессор: Intel</CPU>
 		<diagonal>Диагональ: 15'</diagonal>
@@ -144,7 +144,7 @@
 		<name>Магазин: Seltsam</name>
 	</market>
 	<market idmk="2">
-		<name>Магазин: KMS</name>
+		<name>Магазин: KMS22</name>
 	</market>
 	<market idmk="3">
 		<name>Магазин: DNS</name>
@@ -156,69 +156,72 @@
 		<name>Магазин: Sogar</name>
 	</market>
 	<price_list idmk="1" idpc="1">
-		<price>1</price>
+		<price>100</price>
 	</price_list>
     <price_list idmk="1" idpc="3">
-		<price>1</price>
+		<price>300</price>
 	</price_list>
     <price_list idmk="1" idpc="5">
-		<price>1</price>
+		<price>500</price>
 	</price_list>
 	<price_list idmk="1" idpc="7">
-		<price>2</price>
+		<price>700</price>
 	</price_list>
   	<price_list idmk="1" idpc="9">
-		<price>2</price>
+		<price>900</price>
+	</price_list>
+  <price_list idmk="2" idpc="1">
+		<price>200</price>
 	</price_list>
 	<price_list idmk="2" idpc="6">
-		<price>1</price>
+		<price>1200</price>
 	</price_list>
     <price_list idmk="2" idpc="7">
-		<price>1</price>
+		<price>1400</price>
 	</price_list>
     <price_list idmk="2" idpc="8">
-		<price>1</price>
+		<price>1600</price>
 	</price_list>
 	<price_list idmk="2" idpc="9">
-		<price>2</price>
+		<price>1800</price>
 	</price_list>
   	<price_list idmk="2" idpc="10">
-		<price>2</price>
+		<price>2000</price>
 	</price_list>
-	<price_list idmk="3" idpc="10">
-		<price>2</price>
+	<price_list idmk="3" idpc="8">
+		<price>2400</price>
 	</price_list>
-  	<price_list idmk="3" idpc="8">
-		<price>2</price>
+  	<price_list idmk="3" idpc="10">
+		<price>3000</price>
 	</price_list>
 	<price_list idmk="4" idpc="6">
-		<price>1</price>
+		<price>2400</price>
 	</price_list>
     <price_list idmk="4" idpc="7">
-		<price>1</price>
+		<price>2800</price>
 	</price_list>
     <price_list idmk="4" idpc="8">
-		<price>1</price>
+		<price>3200</price>
 	</price_list>
 	<price_list idmk="4" idpc="9">
-		<price>2</price>
+		<price>3600</price>
 	</price_list>
   	<price_list idmk="4" idpc="10">
-		<price>2</price>
+		<price>4000</price>
 	</price_list>
 	<price_list idmk="5" idpc="2">
-		<price>1</price>
+		<price>1000</price>
 	</price_list>
     <price_list idmk="5" idpc="4">
-		<price>1</price>
+		<price>2000</price>
 	</price_list>
     <price_list idmk="5" idpc="6">
-		<price>1</price>
+		<price>3000</price>
 	</price_list>
 	<price_list idmk="5" idpc="8">
-		<price>2</price>
+		<price>4000</price>
 	</price_list>
   	<price_list idmk="5" idpc="10">
-		<price>2</price>
+		<price>5000</price>
 	</price_list>
 </objects>

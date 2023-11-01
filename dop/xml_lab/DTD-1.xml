@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT objects (computer, market, price_list)>
-<!ELEMENT computer (name, classification, producer, main_settings, application_area, brand, year_of_issue, CPU, diagonal, modem)> 
+<!ELEMENT computer (name, classification, producer, main_settings, application_area, brand, year_of_issue_global, CPU, diagonal, modem)> 
 <!ATTLIST computer
           idpc ID #REQUIRED>
 <!ELEMENT name (#PCDATA)>
@@ -9,8 +9,13 @@
 <!ELEMENT main_settings (#PCDATA)>
 <!ELEMENT application_area (#PCDATA)>
 <!ELEMENT brand (#PCDATA)>
-<!ELEMENT year_of_issue (#PCDATA)>
-<!ELEMENT classification (#PCDATA)>
+<!ELEMENT year_of_issue_global (title_year_of_issue,year_of_issue)>
+    <!ELEMENT title_year_of_issue (#PCDATA)>
+    <!ELEMENT year_of_issue (#PCDATA)>
+<!ELEMENT RAM_global (title_ram, RAM)>
+    <!ELEMENT title_ram (#PCDATA)>
+    <!ELEMENT RAM (#PCDATA)>
+<!ELEMENT monitor (#PCDATA)>
 <!ELEMENT CPU (#PCDATA)>
 <!ELEMENT diagonal (#PCDATA)>
 <!ELEMENT modem (#PCDATA)>
@@ -22,6 +27,8 @@
 
 <!ELEMENT price_list (price)>
 <!ATTLIST price_list
-          idpl ID #REQUIRED>
+          idmk ID #REQUIRED>
+<!ATTLIST price_list
+          idpc ID #REQUIRED>
 <!ELEMENT price (#PCDATA)>
 
