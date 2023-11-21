@@ -2220,12 +2220,12 @@
 										"$ref": "AAAAAAGLHpxxMgM18fQ="
 									},
 									"font": "Arial;13;0",
-									"left": 824,
-									"top": 544,
+									"left": 840,
+									"top": 456,
 									"width": 69.6083984375,
 									"height": 13,
-									"alpha": 1.3045447007209432,
-									"distance": 22.80350850198276,
+									"alpha": 4.562017404262657,
+									"distance": 66.75327707311455,
 									"hostEdge": {
 										"$ref": "AAAAAAGLHpxxMgM3NNc="
 									},
@@ -2336,6 +2336,63 @@
 							"points": "600:576;600:664",
 							"nameLabel": {
 								"$ref": "AAAAAAGL8cqi04GacAM="
+							}
+						},
+						{
+							"_type": "DFDExternalEntityView",
+							"_id": "AAAAAAGL8c05L4G3+ys=",
+							"_parent": {
+								"$ref": "AAAAAAGLGVEpGABurtE="
+							},
+							"model": {
+								"$ref": "AAAAAAGL8c05LoG1DV0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGL8c05L4G9MHs=",
+									"_parent": {
+										"$ref": "AAAAAAGL8c05L4G3+ys="
+									},
+									"font": "Arial;28;0",
+									"left": 122,
+									"top": 773,
+									"width": 381,
+									"height": 28
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGL8c05L4G4bns=",
+									"_parent": {
+										"$ref": "AAAAAAGL8c05L4G3+ys="
+									},
+									"font": "Arial;28;0",
+									"left": 122,
+									"top": 778,
+									"width": 381,
+									"height": 28,
+									"text": "Учесть услуги",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGL8c05L4G5ElY=",
+									"_parent": {
+										"$ref": "AAAAAAGL8c05L4G3+ys="
+									},
+									"font": "Arial;28;0",
+									"left": -72,
+									"top": -64,
+									"height": 28
+								}
+							],
+							"font": "Arial;28;0",
+							"left": 112,
+							"top": 768,
+							"width": 401,
+							"height": 105,
+							"nameLabel": {
+								"$ref": "AAAAAAGL8c05L4G4bns="
 							}
 						}
 					]
@@ -2948,6 +3005,14 @@
 							}
 						}
 					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGL8c05LoG1DV0=",
+					"_parent": {
+						"$ref": "AAAAAAGLGVEpFwBtGqY="
+					},
+					"name": "Учесть услуги"
 				}
 			]
 		}
