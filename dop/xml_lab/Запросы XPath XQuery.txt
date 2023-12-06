@@ -92,14 +92,41 @@ let $C := //computer[modem="Модем встроен" and diagonal="Диаго�
     $MarketAll := //market
     return count($MarketAll/@idmk) = count($Market/@idmk)
 
-г)	существует ли такая фирма, чьи компьютеры стоимости < 1000 продаются во всех магазинах ([хотя бы один в каждом]).
+г)	существует ли такая фирма, чьи компьютеры стоимости < 1000 продаются во всех магазинах ([хотя бы один в каждом]). (Доделать)
 
 let $C1 := //computer[producer="Фирма: АИ-АИ"],
 	$Id1 := $C1/@idpc,
 	$PL1 := //price_list[./@idpc=$Id1], 
 	$C2 := //computer[producer="Фирма: ChinaPK"],
 	$Id2 := $C2/@idpc,
-	$PL2 := //price_list[./@idpc=$Id2], 
+	$PL2 := //price_list[./@idpc=$Id2],
+    $Market := //market/@idmk,
+	$MK1 := for $j in $Market
+    		let $PL1sort := for $i in $PL1[./@idmk=$j]
+        	    	order by $i
+			    	return $i,
+                $PL2sort := for $i in $PL2[./@idmk=$j]
+        	    	order by $i
+			    	return $i
+                    
+	return ($PL1sort[1]<1000 or $PL2sort[1]<1000)
+    return ($MK1[1] and $MK1[2] and $MK1[3] and $MK1[2] and $MK1[5])
+
+
+
+
+
+let $a := for $list in //producer
+			let $idc := //computer[./producer=$list]/@idpc,
+        	$pricep := //price_list[./@idpc = $idc]/@idmk
+        	where every $n in //market/@idmk 
+        	satisfies(some $m in $pricep 
+        	satisfies($n = $m))
+        	return 1
+
+return("Да", (if (count ($a) > 0) then "Да" else "Нет"))
+
+
 
 5.	Еще 2-3 "содержательных" XQuery-запроса к Вашей БД.
 
