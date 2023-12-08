@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/s0160079/ontologies/2023/11/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/s0160079/ontologies/2023/11/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/s0160079/ontologies/2023/11/untitled-ontology-2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Акт_амнистии"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Арест"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Возмещение_причиненного_ущерба"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Деятельное_раскаяние"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Иные_меры_уголовно-правового_характера"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Истечение_срока_давности"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Конфискация_имущества"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Лишение_свободы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Наказание"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Обстоятельства_исключающие_преступность_деяния"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Особо_тяжкое_преступление"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Преступление"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Преступление_средней_тяжести"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Примерение_с_потерпевшим"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Принудительные_меры_воспитательного_характера"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Принудительные_меры_медицинского_характера"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Специальные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Судебный_штраф"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Тяжкое_преступление"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Уголовный_кодекс"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Акт_Амнистии"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Вымогательство"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Доведение_до_самоубийства"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Жестокое_обращение_с_животными"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Захват_заложника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кража"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Незаконная_рубка_лесных_насаждений"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Незаконное_освобождение_от_ответственности"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Организация_занятия_проституцией"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Организация_преступного_сообщества"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Побои"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Подделка_и_сбыт_поддельных_документов"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пожизненное_заключение"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Служебный_подлог"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Содействие_террористической_деятельности"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Террористический_акт"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Убийство"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Убийство_матерью_новорожденного_ребенка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Умышленное_причинение_тяжкого_вреда_здоровью"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#от_10_до_20_лет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#от_2_до_5_лет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#от_5_до_10_лет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_год"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_месяц"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_месяца"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#25_лет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_месяцa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#30_лет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_месяцa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_месяцев"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6_месяцев"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Акт_амнистии"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Арест"/>
+        <Class IRI="#Наказание"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Возмещение_причиненного_ущерба"/>
+        <Class IRI="#Иные_меры_уголовно-правового_характера"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Деятельное_раскаяние"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Иные_меры_уголовно-правового_характера"/>
+        <Class IRI="#Уголовный_кодекс"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Истечение_срока_давности"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Конфискация_имущества"/>
+        <Class IRI="#Иные_меры_уголовно-правового_характера"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Лишение_свободы"/>
+        <Class IRI="#Наказание"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Наказание"/>
+        <Class IRI="#Уголовный_кодекс"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Обстоятельства_исключающие_преступность_деяния"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Освобождение_от_отвественности"/>
+        <Class IRI="#Уголовный_кодекс"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Особо_тяжкое_преступление"/>
+        <Class IRI="#Преступление"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Преступление"/>
+        <Class IRI="#Уголовный_кодекс"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <Class IRI="#Преступление"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Преступление_средней_тяжести"/>
+        <Class IRI="#Преступление"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Примерение_с_потерпевшим"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Принудительные_меры_воспитательного_характера"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Принудительные_меры_медицинского_характера"/>
+        <Class IRI="#Иные_меры_уголовно-правового_характера"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Специальные"/>
+        <Class IRI="#Освобождение_от_отвественности"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Судебный_штраф"/>
+        <Class IRI="#Иные_меры_уголовно-правового_характера"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Тяжкое_преступление"/>
+        <Class IRI="#Преступление"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Освобождение_от_отвественности"/>
+        <NamedIndividual IRI="#Акт_Амнистии"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_средней_тяжести"/>
+        <NamedIndividual IRI="#Вымогательство"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_средней_тяжести"/>
+        <NamedIndividual IRI="#Доведение_до_самоубийства"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <NamedIndividual IRI="#Жестокое_обращение_с_животными"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Тяжкое_преступление"/>
+        <NamedIndividual IRI="#Захват_заложника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <NamedIndividual IRI="#Кража"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <NamedIndividual IRI="#Незаконная_рубка_лесных_насаждений"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Тяжкое_преступление"/>
+        <NamedIndividual IRI="#Незаконное_освобождение_от_ответственности"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_средней_тяжести"/>
+        <NamedIndividual IRI="#Организация_занятия_проституцией"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Особо_тяжкое_преступление"/>
+        <NamedIndividual IRI="#Организация_преступного_сообщества"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <NamedIndividual IRI="#Побои"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <NamedIndividual IRI="#Подделка_и_сбыт_поддельных_документов"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#Пожизненное_заключение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_небольшой_тяжести"/>
+        <NamedIndividual IRI="#Служебный_подлог"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Тяжкое_преступление"/>
+        <NamedIndividual IRI="#Содействие_террористической_деятельности"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Особо_тяжкое_преступление"/>
+        <NamedIndividual IRI="#Террористический_акт"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Особо_тяжкое_преступление"/>
+        <NamedIndividual IRI="#Убийство"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Преступление_средней_тяжести"/>
+        <NamedIndividual IRI="#Убийство_матерью_новорожденного_ребенка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Тяжкое_преступление"/>
+        <NamedIndividual IRI="#Умышленное_причинение_тяжкого_вреда_здоровью"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#от_10_до_20_лет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#от_2_до_5_лет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#от_5_до_10_лет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#1_год"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#1_год"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#1_месяц"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#2_месяца"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#2_месяца"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#25_лет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#3_месяцa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#30_лет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#4_месяцa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#5_месяцев"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Арест"/>
+        <NamedIndividual IRI="#6_месяцев"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лишение_свободы"/>
+        <NamedIndividual IRI="#6_месяцев"/>
+    </ClassAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
